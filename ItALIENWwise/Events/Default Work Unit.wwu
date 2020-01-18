@@ -130,6 +130,80 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Mus_Score_Start" ID="{3B1BDC85-E39C-4A56-B02A-9285DF263CC0}">
+					<ChildrenList>
+						<Action Name="" ID="{6E9270FD-90AB-4D7E-97FE-D8F4C409A15F}" ShortID="6565616">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicScore" ID="{91D7C56A-3B09-4CCC-82F1-FB12AB6B09F8}" WorkUnitID="{836D5949-112A-41DF-9CCC-CD08E64F726E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mus_Score_Stop" ID="{1B41D086-586A-4715-9523-8CCEA01CA8D0}">
+					<ChildrenList>
+						<Action Name="" ID="{EE5BB9A2-EDFF-4A2B-9784-1739EE8B73D6}" ShortID="322147974">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeInCurve" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicScore" ID="{91D7C56A-3B09-4CCC-82F1-FB12AB6B09F8}" WorkUnitID="{836D5949-112A-41DF-9CCC-CD08E64F726E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mus_IntroStart" ID="{25D458FC-79CA-4C84-A952-D9925A88708F}">
+					<ChildrenList>
+						<Action Name="" ID="{251DB582-4EB7-45F6-A987-EDA6FEABE2B8}" ShortID="244904674">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicIntro" ID="{7EE157F9-7968-44D6-927C-C86FC84848B3}" WorkUnitID="{836D5949-112A-41DF-9CCC-CD08E64F726E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mus_Intro_Stop" ID="{B5DE8803-EE0A-4EE5-8818-244CDC94C272}">
+					<ChildrenList>
+						<Action Name="" ID="{9A691A3A-50C8-4E21-9CFE-07AC917EF91B}" ShortID="212751520">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicIntro" ID="{7EE157F9-7968-44D6-927C-C86FC84848B3}" WorkUnitID="{836D5949-112A-41DF-9CCC-CD08E64F726E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BlackHoleAppear" ID="{BBD93530-7431-41B4-9A31-924C88802611}">
+					<ChildrenList>
+						<Action Name="" ID="{C0CD4456-83EF-45D0-8CFC-D506239E959C}" ShortID="1013313446">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="blackHoleAppear" ID="{F65D3D23-C896-40CC-B524-CB2B65729D00}" WorkUnitID="{6845ADAF-4012-4965-8C7E-36513FBF0D85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
