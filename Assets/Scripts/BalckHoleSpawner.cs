@@ -1,92 +1,66 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class BalckHoleSpawner : MonoBehaviour
 {
-    private GameObject[] lanes;
-    private Transform[] blackHolePos;
+    [SerializeField]
+    GameObject blackHole;
+    [SerializeField]
+    Transform[] blackHolesPos;
+
+    List<GameObject> blackHolesList;
+    List<int> indexUsed;
+
+    private float timeBetweenSpawns = 5f;
+
+
     void Start()
     {
-        lanes = GetComponentsInChildren<GameObject>();
-
-        for (int i = 0; i < 4; i++)
-        {
-            blackHolePos = lanes[i].GetComponentsInChildren<Transform>();
-        }
+        indexUsed = new List<int>();
+        blackHolesList = new List<GameObject>();
+        StartCoroutine(SpawnBlackHoles());
+        GameEventManager.Instance.OnDecreaseSpawnTime += decreaseTime;
     }
 
     void Update()
     {
-        foreach (Transform item in blackHolePos)
+            
+    }
+    
+
+    private IEnumerator SpawnBlackHoles()
+    {
+       
+        int index = Random.Range(0, blackHolesPos.Length);
+        while(!isValidIndex(index))
         {
-            //if(!item.GetComponent)
+            index = Random.Range(0, blackHolesPos.Length);
         }
+        GameObject instance = Instantiate(blackHole, blackHolesPos[index].position, Quaternion.identity);
+        instance.transform.SetParent(blackHolesPos[index]);
+        yield return new WaitForSeconds(timeBetweenSpawns);
+        StartCoroutine(SpawnBlackHoles());
     }
 
-
-
-
-    /*
-    private void Awake()
+    private bool isValidIndex(int index)
     {
-        initialTriggerPosition = this.transform.localPosition;
-
-        portalAnimator = GetComponentInParent<Animator>();
-        sphereCollider = portal.GetComponent<SphereCollider>();
-        spriteRenderer = GetComponentInParent<SpriteRenderer>();
-
-        spriteRenderer.color = spriteRenderer.color = new Color(1, 1, 1, 0);//just making sure black holes are invisible  
-
-        GameEventManager.Instance.OnResetLevel += ReplaceTriggerAtInitialPos;
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Ball")
+        foreach (var item in indexUsed)
         {
-            particleSystem.Play();
-            GameEventManager.Instance.OnPlaySoundfx("obstacle");
-            spawningTime = SettingsManager.instance.getObstacleTime;
-            if (!isRunning)
-            {
-                StartCoroutine(SpawnBlackHole());
-            }
+            if (item == index)
+                return false;
         }
+        indexUsed.Add(index);
+        return true;
     }
 
-    IEnumerator SpawnBlackHole()
+    private void decreaseTime()
     {
-        isRunning = true;
-        yield return new WaitForSeconds(spawningTime);
-        sphereCollider.enabled = true;       
-        portalAnimator.SetTrigger("Spin");
-        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / 3f)
-        {
-            Color alphaUp = new Color(1, 1, 1, Mathf.Lerp(0f, 1f, t));
-            spriteRenderer.color = alphaUp;
-            yield return new WaitForEndOfFrame();
-        }
-        spriteRenderer.color = new Color(1, 1, 1, 1);
-        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / 3f)
-        {
-            Color alphaDown = new Color(1, 1, 1, Mathf.Lerp(1f, 0f, t));
-            spriteRenderer.color = alphaDown;
-            yield return new WaitForEndOfFrame();
-        }
-        spriteRenderer.color = new Color(1, 1, 1, 0);
-        portal.SetActive(false);
-        isRunning = false;
+        timeBetweenSpawns--;
     }
 
-    private void ReplaceTriggerAtInitialPos()
+    void OnDestroy()
     {
-        this.transform.localPosition = initialTriggerPosition;
-        isRunning = false;
+        GameEventManager.Instance.OnDecreaseSpawnTime -= decreaseTime;
     }
-
-    private void OnDestroy()
-    {
-        GameEventManager.Instance.OnResetLevel -= ReplaceTriggerAtInitialPos;
-    }
-    */
 }

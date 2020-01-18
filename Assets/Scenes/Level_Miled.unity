@@ -757,6 +757,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58f31dddbb26464b9adfdbbd95ac1ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blackHole: {fileID: 2911796609265855632, guid: 28b7112ae845508458b48bd29ac027ef,
+    type: 3}
 --- !u!1 &449922541
 GameObject:
   m_ObjectHideFlags: 0
