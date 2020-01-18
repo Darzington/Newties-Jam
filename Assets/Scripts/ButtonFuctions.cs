@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ButtonFuctions : MonoBehaviour
 {
+    public AK.Wwise.Event stopMusic;
+
+    public GameObject wwiseObj;
     public void LoadLeaderboardIntro()
     {
         SceneManager.LoadScene("LeaderboardIntro");
@@ -18,6 +21,7 @@ public class ButtonFuctions : MonoBehaviour
     public void LoadLevel()
     {
         SceneManager.LoadScene("Level");
+        stopMusic.Post(wwiseObj);
     }
 
     public void LoadMenu()

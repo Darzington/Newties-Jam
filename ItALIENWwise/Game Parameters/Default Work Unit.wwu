@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}" SchemaVersion="89">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}">
+					<PropertyList>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

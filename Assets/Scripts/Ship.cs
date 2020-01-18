@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour, IHittable
 {
-    [SerializeField] private int shootShipBalanceChange = 10, shipSpaghettifyBalanceChange = 4;
+    private int shootShipBalanceChange = 5, shipSpaghettifyBalanceChange = 4;
+    [SerializeField] GameObject spaghetti;
 
     public void Hit()
     {
@@ -13,6 +14,8 @@ public class Ship : MonoBehaviour, IHittable
 
     public void Spaghettify()
     {
+        Instantiate(spaghetti, transform.position, Quaternion.identity);
+
         DestroyAndChangeBalance(shipSpaghettifyBalanceChange);
     }
 
