@@ -9,15 +9,14 @@ public class MafiaMeter : MonoBehaviour
 
     public GameObject wwiseObj;
 
-    [SerializeField] private Image marker, meterBase, redZone;
+    [SerializeField] private Image marker, meterBase;
 
     private float balance = 0, desiredBalance = 0, maxInEitherDirection, failBalance = 100, balanceChangeTime = 0, adjustmentTime = 0.5f;
-    private Coroutine shifter;
     private bool isOver = false;
 
     void Start()
     {
-        float playableWidth = meterBase.gameObject.GetComponent<RectTransform>().rect.width - 2.0f * redZone.gameObject.GetComponent<RectTransform>().rect.width;
+        float playableWidth = meterBase.gameObject.GetComponent<RectTransform>().rect.width;
         maxInEitherDirection = playableWidth / 2.0f;
     }
 

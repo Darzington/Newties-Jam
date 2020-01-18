@@ -269,7 +269,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -150}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &187618540
@@ -434,6 +434,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreTracker
       objectReference: {fileID: 0}
+    - target: {fileID: 2496663507693756761, guid: 3ceb7367bae02bd4f90ccd7621a639c5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -160
+      objectReference: {fileID: 0}
+    - target: {fileID: 2496663507693756761, guid: 3ceb7367bae02bd4f90ccd7621a639c5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -10
+      objectReference: {fileID: 0}
     - target: {fileID: 2496663507693756766, guid: 3ceb7367bae02bd4f90ccd7621a639c5,
         type: 3}
       propertyPath: m_Color.r
@@ -448,6 +458,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2496663507693756766, guid: 3ceb7367bae02bd4f90ccd7621a639c5,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2496663507693756766, guid: 3ceb7367bae02bd4f90ccd7621a639c5,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ceb7367bae02bd4f90ccd7621a639c5, type: 3}
@@ -529,6 +549,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MafiaMeter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788788318123388752, guid: efc0a6eab60ccd24a8226d58f97a4b18,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788788318123388752, guid: efc0a6eab60ccd24a8226d58f97a4b18,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
         type: 3}
@@ -861,7 +891,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: c381c29bac0ed6c47bf3b03028ebd4a5, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
