@@ -56,7 +56,7 @@ public class BlackHole : MonoBehaviour, IHittable
     void OnDestroy()
     {
         GameEventManager.Instance.OnBlackHoleSizeUp -= increaseBlackHole;
-        GameEventManager.Instance.OnBlackHoleSizeUp -= destroyBlackHole;
+        GameEventManager.Instance.OnBlackHoleDestroy -= destroyBlackHole;
         Destroy(this.gameObject);
     }
 

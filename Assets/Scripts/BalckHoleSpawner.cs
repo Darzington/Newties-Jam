@@ -33,6 +33,7 @@ public class BalckHoleSpawner : MonoBehaviour
         }
         GameObject instance = Instantiate(blackHole, blackHolesPos[index].position, Quaternion.identity);
         instance.transform.SetParent(blackHolesPos[index]);
+        Debug.Log("BLACK HOLE SPAWNED SOMEWHERE");
         yield return new WaitForSeconds(timeBetweenSpawns);
         StartCoroutine(SpawnBlackHoles());
     }
