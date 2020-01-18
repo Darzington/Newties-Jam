@@ -21,6 +21,7 @@
 			<ShortName>New_SoundBank</ShortName>
 			<Path>New_SoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1277278512" Name="blackHoleSchrink" ObjectPath="\Events\Default Work Unit\blackHoleSchrink"/>
 				<Event Id="2069380085" Name="Car_Explosion" ObjectPath="\Events\Default Work Unit\Car_Explosion"/>
 				<Event Id="2381981414" Name="LaserShot" ObjectPath="\Events\Default Work Unit\LaserShot"/>
 				<Event Id="1447920996" Name="MenuStart" ObjectPath="\Events\Default Work Unit\MenuStart"/>
@@ -106,6 +107,10 @@
 				<File Id="720581476" Language="SFX">
 					<ShortName>LaserShots-002.wav</ShortName>
 					<Path>SFX\LaserShots-002_56D34C19.wem</Path>
+				</File>
+				<File Id="721803917" Language="SFX">
+					<ShortName>blackHoleShrink.wav</ShortName>
+					<Path>SFX\blackHoleShrink_56D34C19.wem</Path>
 				</File>
 				<File Id="778647489" Language="SFX">
 					<ShortName>Mus_Mafia_PianoGroove2.wav</ShortName>

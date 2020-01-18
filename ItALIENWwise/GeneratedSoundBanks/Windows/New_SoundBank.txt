@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	385134826	SpaghettiPops			\Default Work Unit\SpaghettiPops	
 	481313334	Mus_Game_Stop			\Default Work Unit\Mus_Game_Stop	
 	1074254744	MenuStop			\Default Work Unit\MenuStop	
+	1277278512	blackHoleSchrink			\Default Work Unit\blackHoleSchrink	
 	1447920996	MenuStart			\Default Work Unit\MenuStart	
 	1569836982	Mus_Game_Start			\Default Work Unit\Mus_Game_Start	
 	2069380085	Car_Explosion			\Default Work Unit\Car_Explosion	
@@ -31,6 +32,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	607722893	Mus_Mafia_Mel2_Attack	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Mafia_Mel2_Attack_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel2\Mus_Mafia_Mel2_Attack		2837804
 	650341219	Desintegration	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Desintegration_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Desintegration		150356
 	720581476	LaserShots-002	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\LaserShots-002_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\LaserShots\LaserShots-002		237280
+	721803917	blackHoleShrink	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\blackHoleShrink_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\blackHoleShrink		273488
 	778647489	Mus_Mafia_PianoGroove2	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Mafia_PianoGroove2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel2\Mus_Mafia_PianoGroove2		2607716
 	1067018897	Mus_Mafia_Percs	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Mafia_Percs_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel1\Mus_Mafia_Percs		2300932
 

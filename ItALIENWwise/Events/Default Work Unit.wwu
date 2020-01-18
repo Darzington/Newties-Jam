@@ -116,6 +116,20 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="SpaghettiPops" ID="{C393A771-3BE4-4C7D-9189-2C48BD4D6609}"/>
+				<Event Name="blackHoleSchrink" ID="{CA4B053A-0022-4E97-90D4-F2EC6E3C5F2A}">
+					<ChildrenList>
+						<Action Name="" ID="{D66F5174-1572-47FD-A7C0-FF731A94314E}" ShortID="390000058">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="blackHoleShrink" ID="{E53AB499-43B6-497C-9ACC-9775C3C9894A}" WorkUnitID="{6845ADAF-4012-4965-8C7E-36513FBF0D85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

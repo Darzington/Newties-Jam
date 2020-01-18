@@ -33,11 +33,15 @@
 							<ObjectRef Name="LaserShot" ID="{5D190101-CB91-4576-9DDD-9ABC513A8591}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
 							<Position X="1" Y="3"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="blackHoleSchrink" ID="{CA4B053A-0022-4E97-90D4-F2EC6E3C5F2A}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="2" Y="3"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}"/>
-							<Value>-100</Value>
+							<Value>-87</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
