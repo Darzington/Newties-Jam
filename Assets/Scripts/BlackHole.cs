@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlackHole : MonoBehaviour
+public class BlackHole : MonoBehaviour, IHittable
 {
-    
-
     private Animator animator;
     private int blackHoleSize = 0;
     
@@ -15,12 +13,6 @@ public class BlackHole : MonoBehaviour
         animator = GetComponent<Animator>();
         GameEventManager.Instance.OnBlackHoleSizeUp += increaseBlackHole;
         GameEventManager.Instance.OnBlackHoleDestroy += destroyBlackHole;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     private void increaseBlackHole()
@@ -47,18 +39,29 @@ public class BlackHole : MonoBehaviour
 
     private void destroyBlackHole()
     {
-        onDestroy();
+        OnDestroy();
         // APPLY SOME COOL ANIMATION OR PARTICLE FX HERE !
     }
 
-    void onDestroy()
+    private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("BLACK HOLE DESTROYER CALLED, THIS HERE JUST TO CHECK");
-        GameEventManager.Instance.OnBlackHoleSizeUp -= increaseBlackHole;
-        GameEventManager.Instance.OnBlackHoleSizeUp -= destroyBlackHole;
+        Ship ship = other.gameObject.GetComponent<Ship>();
+        if (ship != null)
+        {
+            ship.Spaghettify();
+            increaseBlackHole();
+        }
     }
 
+    void OnDestroy()
+    {
+        GameEventManager.Instance.OnBlackHoleSizeUp -= increaseBlackHole;
+        GameEventManager.Instance.OnBlackHoleSizeUp -= destroyBlackHole;
+        Destroy(this.gameObject);
+    }
 
-
-
+    public void Hit()
+    {
+        destroyBlackHole();
+    }
 }

@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2911796609265855636}
   - component: {fileID: 2911796609265855635}
-  - component: {fileID: 2911796609265855634}
   - component: {fileID: 2911796609265855633}
+  - component: {fileID: 5688627950769985290}
   m_Layer: 0
   m_Name: BlackHole
   m_TagString: Untagged
@@ -83,19 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!135 &2911796609265855634
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2911796609265855632}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2.93
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &2911796609265855633
 Animator:
   serializedVersion: 3
@@ -115,3 +102,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &5688627950769985290
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2911796609265855632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.93
+  m_Center: {x: 0, y: 0, z: 0}
