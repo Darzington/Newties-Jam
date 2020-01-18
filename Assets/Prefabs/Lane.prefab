@@ -195,10 +195,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shipPrefab: {fileID: 8831262922393564908, guid: c236fbb1caa136548929e7ff28bab595,
     type: 3}
-  dir: 1
+  dir: 0
   moveSpeed: 0
-  minMoveSpeed: 5
-  maxMoveSpeed: 20
+  minMoveSpeed: 10
+  maxMoveSpeed: 30
   timeBetweenSpawns: 0
   randomSpawnTimeOffset: 0
 --- !u!1 &3726698987697270969
@@ -434,10 +434,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shipPrefab: {fileID: 8831262922393564908, guid: c236fbb1caa136548929e7ff28bab595,
     type: 3}
-  dir: 1
+  dir: 0
   moveSpeed: 0
-  minMoveSpeed: 5
-  maxMoveSpeed: 20
+  minMoveSpeed: 10
+  maxMoveSpeed: 30
   timeBetweenSpawns: 0
   randomSpawnTimeOffset: 0
 --- !u!1 &7805295689804701886
@@ -487,8 +487,8 @@ MonoBehaviour:
     type: 3}
   dir: 0
   moveSpeed: 0
-  minMoveSpeed: 5
-  maxMoveSpeed: 20
+  minMoveSpeed: 10
+  maxMoveSpeed: 30
   timeBetweenSpawns: 0
   randomSpawnTimeOffset: 0
 --- !u!1 &8296669726400223262
@@ -538,7 +538,7 @@ MonoBehaviour:
     type: 3}
   dir: 0
   moveSpeed: 0
-  minMoveSpeed: 5
-  maxMoveSpeed: 20
+  minMoveSpeed: 10
+  maxMoveSpeed: 30
   timeBetweenSpawns: 0
   randomSpawnTimeOffset: 0

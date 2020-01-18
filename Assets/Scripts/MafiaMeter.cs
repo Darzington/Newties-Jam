@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class MafiaMeter : MonoBehaviour
 {
+    public AK.Wwise.RTPC meterMusic;
+
+    public GameObject wwiseObj;
+
     [SerializeField] private Image marker, meterBase, redZone;
 
     private float balance = 0, desiredBalance = 0, maxInEitherDirection, failBalance = 100, balanceChangeTime = 0, adjustmentTime = 0.5f;
@@ -22,6 +26,7 @@ public class MafiaMeter : MonoBehaviour
         if (!isOver)
         {
             balance = Mathf.Lerp(balance, desiredBalance, (Time.time - balanceChangeTime)/ adjustmentTime);
+            meterMusic.SetValue(wwiseObj, balance);
             Vector3 markerPosition = marker.transform.localPosition;
             markerPosition.x = (balance / failBalance) * maxInEitherDirection;
             marker.transform.localPosition = markerPosition;

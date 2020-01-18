@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D8F5FE2B-1B36-4728-8EAC-2CF0DF6D1740}" SchemaVersion="89">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{D8F5FE2B-1B36-4728-8EAC-2CF0DF6D1740}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="itAlien" ID="{038EDC1F-0CE3-4BAA-855A-8AB777FF88B9}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="MenuStart" ID="{D872DB79-39EF-4431-B472-D9EE78AA1F4E}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Mus_Game_Start" ID="{34F4167D-D328-4213-A3C3-F88A74075D8B}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Spaghettication" ID="{452EFEAE-8791-486E-B394-6C0C3AFCC4B6}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Car_Explosion" ID="{57808510-5966-4B0A-92EA-3672E3C1E800}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MenuStop" ID="{CBC37116-0C80-4DCA-9C35-A7C871AEC6D7}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Mus_Game_Stop" ID="{377F9B59-2DFF-45C8-B21D-D04671C6B1C0}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="LaserShot" ID="{5D190101-CB91-4576-9DDD-9ABC513A8591}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="blackHoleSchrink" ID="{CA4B053A-0022-4E97-90D4-F2EC6E3C5F2A}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}"/>
+							<Value>-87</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

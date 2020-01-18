@@ -1,0 +1,1483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{836D5949-112A-41DF-9CCC-CD08E64F726E}" SchemaVersion="89">
+	<InteractiveMusic>
+		<WorkUnit Name="Default Work Unit" ID="{836D5949-112A-41DF-9CCC-CD08E64F726E}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="GameMusic" ID="{6C1E41B6-46DC-4E91-8A2D-8C97322D33CF}" ShortID="207797667">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="138"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Mus_Mafia_Mel1" ID="{9561EFE2-30A3-4783-ADED-BC67FABB7D4A}" ShortID="380049539">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="13043.4782608696"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Mus_Mafia_Mel1" ID="{9797F0F1-1A1F-41E5-9BF4-8258CBE92C2E}" ShortID="582166795">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{59C71B58-78E9-4CC6-A515-2C8A1B9FDE2E}" ShortID="239044044">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}" WorkUnitID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{CCFA5E7D-862C-4F8A-B0A1-B48BBD672F92}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-100</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>30</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_Mafia_Mel1" ID="{E30EC012-8DE7-4AE7-BC0B-38DBC0A88E7C}" ShortID="104668417">
+											<Language>SFX</Language>
+											<AudioFile>Mus_Mafia_Mel1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{8A31AD8F-0843-4151-9318-A34DC0B2DB30}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{AD0D735E-6508-4D6A-9620-062A874D6747}">
+											<ClipList>
+												<MusicClip Name="Mus_Mafia_Mel1" ID="{3D9B8A09-42D9-4DA6-88BB-7EF3CE2B9728}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13043.4693877551"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Mafia_Mel1" ID="{E30EC012-8DE7-4AE7-BC0B-38DBC0A88E7C}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_Mafia_Basse" ID="{F568EB87-D2BC-4AD8-B235-C6B7919A299E}" ShortID="697092195">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{67A798C4-D8B7-4BDB-9F19-8F87594A0A0E}" ShortID="133806257">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}" WorkUnitID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{BC0E0D46-5DA1-4083-A540-E50F9345DE73}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-100</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>70</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_Mafia_Basse" ID="{8D13081D-78CD-43BF-8E7F-1AAE240F7BCE}" ShortID="324271420">
+											<Language>SFX</Language>
+											<AudioFile>Mus_Mafia_Basse.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{B0EBAC04-85E2-4784-AA6A-F904389EC05D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{0B52453D-D57E-470D-B46C-154435DDB077}">
+											<ClipList>
+												<MusicClip Name="Mus_Mafia_Basse" ID="{F964E1A8-2DC9-48B9-A321-C034DED3B377}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13043.4693877551"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Mafia_Basse" ID="{8D13081D-78CD-43BF-8E7F-1AAE240F7BCE}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_Mafia_Percs" ID="{EBBDD978-E351-449C-BB17-D4FBFF93062F}" ShortID="190438991">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_Mafia_Percs" ID="{AB125577-3ECB-4CC5-AF8D-A288B058DDDC}" ShortID="1067018897">
+											<Language>SFX</Language>
+											<AudioFile>Mus_Mafia_Percs.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{A9F3917B-A742-4E5F-803D-8C7427D5F109}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{510812A2-6CFD-41A0-BF1A-C7F4808614D5}">
+											<ClipList>
+												<MusicClip Name="Mus_Mafia_Percs" ID="{E0CD4325-47F3-46D8-9DA6-2E4D252F6659}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="12608.6956521739"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="814.033648292409"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="340.758271378219"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Mafia_Percs" ID="{AB125577-3ECB-4CC5-AF8D-A288B058DDDC}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{F6D627DF-C955-4207-89AF-9FE9F2BC7842}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12.6087</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{BADFBE1B-F87F-4CBA-AC27-0F0FED110D00}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12.6087</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{96C52D1A-1E63-4048-91DE-F89F9D958DF1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12.6087</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_Mafia_PianoGroove" ID="{6C9BECB3-15B5-4FD5-8742-657034C76DC6}" ShortID="583819972">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{DFA83F5D-3AE3-4A1A-A8E0-5C2786A952BD}" ShortID="767537444">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}" WorkUnitID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{0A3FCB15-4BCA-40B0-8696-FCF7FE839E93}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-100</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>29.998</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_Mafia_PianoGroove" ID="{7AB2A48C-5640-472D-8948-BA2A7824AC73}" ShortID="580220727">
+											<Language>SFX</Language>
+											<AudioFile>Mus_Mafia_PianoGroove.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{CE47F1BC-263D-48A6-8DA6-E0DB9152C2A9}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{1D785C40-4321-4AF8-8C29-42681D9DDAE4}">
+											<ClipList>
+												<MusicClip Name="Mus_Mafia_PianoGroove" ID="{C5F8A26B-3069-4BD2-A18E-F33CEF134B6E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13043.4693877551"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Mafia_PianoGroove" ID="{7AB2A48C-5640-472D-8948-BA2A7824AC73}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_SpaceCity_AccInt1" ID="{2244F9EB-F039-4ED2-B3C7-166519AD1C0B}" ShortID="623498014">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{175F2C45-DAC9-4BCE-B10E-19857FE2F65A}" ShortID="536900198">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}" WorkUnitID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{E4D6C18E-5B82-41D8-B0BE-0EAAE2125E58}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-100</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>-50</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>-30</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_SpaceCity_AccInt1" ID="{90E837D6-0DCB-4698-AFD7-EFF5AA5979DF}" ShortID="222567138">
+											<Language>SFX</Language>
+											<AudioFile>Mus_SpaceCity_AccInt1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{C68F7129-40AA-41FD-83C5-02DE680ACD06}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{E3B962DE-CCB4-497E-B0DD-D133D72A96A0}">
+											<ClipList>
+												<MusicClip Name="Mus_SpaceCity_AccInt1" ID="{8EFD9407-3CA5-4D4B-A2CC-CFA90371F778}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13043.4693877551"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_SpaceCity_AccInt1" ID="{90E837D6-0DCB-4698-AFD7-EFF5AA5979DF}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_SpaceCity_Basse1" ID="{0D21C223-94C5-4C85-8AE4-705B0110075C}" ShortID="776333756">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{58FC7F21-DA7F-4013-91F0-7147FE79F19A}" ShortID="829625772">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}" WorkUnitID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{9F73FAF0-361A-4306-A6ED-9F4D79BA55F0}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-100</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>-30</XPos>
+																<YPos>-0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>-10</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_SpaceCity_Basse1" ID="{952109DF-9BFA-4273-86A9-C4A5CEFA5FDF}" ShortID="604018777">
+											<Language>SFX</Language>
+											<AudioFile>Mus_SpaceCity_Basse1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{5EBD1212-8E29-48C8-999A-E29C0EB0A4BF}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{80800FA4-4E99-43F0-9550-4C3AE3979585}">
+											<ClipList>
+												<MusicClip Name="Mus_SpaceCity_Basse1" ID="{C6A8264F-5B57-4CAD-9793-D298F2D5CC48}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13043.4693877551"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_SpaceCity_Basse1" ID="{952109DF-9BFA-4273-86A9-C4A5CEFA5FDF}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_SpaceCity_Mel1" ID="{08712FB3-CAC2-45D5-B960-148AA03C770B}" ShortID="142878003">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{9F0B06C0-C142-46F8-82B2-103C1CF31794}" ShortID="873198612">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}" WorkUnitID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{5E9F8611-993D-465C-86B8-DEE233D746B4}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-100</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>-70</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>-50</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_SpaceCity_Mel1" ID="{30948A15-B476-45B1-89BC-3B7CAAC30ACF}" ShortID="438215147">
+											<Language>SFX</Language>
+											<AudioFile>Mus_SpaceCity_Mel1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{96AAE0D4-3D60-4CA0-9042-B00B24ECD09C}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{312B7D2D-A7A3-464A-85E1-2C06778AE6C1}">
+											<ClipList>
+												<MusicClip Name="Mus_SpaceCity_Mel1" ID="{7BB7ACBB-F211-4938-B87C-E58BBC4C7443}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13043.4693877551"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_SpaceCity_Mel1" ID="{30948A15-B476-45B1-89BC-3B7CAAC30ACF}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{F6D96E4F-85E2-4266-BD37-D7409CADDE0B}">
+									<PropertyList>
+										<Property Name="TimeMs" Type="Real64" Value="1739.13043478261"/>
+									</PropertyList>
+								</MusicCue>
+								<MusicCue Name="Exit Cue" ID="{9CA27212-134A-43A4-8C06-1CBB629DF62A}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="12173.9130434783"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Mus_Mafia_Mel2" ID="{4470DFF9-0DAE-45A0-A210-65465555AFC0}" ShortID="355256737">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="26956.512866016"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Mus_Mafia_Mel2" ID="{1646A181-DD8C-41BC-8312-3882093652D8}" ShortID="76694305">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{6B0AC3B9-19BB-4CD9-95DE-18509F66C90C}" ShortID="623998985">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}" WorkUnitID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{33E9DDE4-6093-4190-BB4C-A67C42427218}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-100</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>30</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_Mafia_Mel2" ID="{4752617B-7F38-474D-86FC-0D9E923F8F7A}" ShortID="466612607">
+											<Language>SFX</Language>
+											<AudioFile>Mus_Mafia_Mel2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{2F703CCC-BBEB-4C41-A215-5FA563C26198}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{19A5C1EC-3F76-4BA0-A205-903F3DE8FD0D}">
+											<ClipList>
+												<MusicClip Name="Mus_Mafia_Mel2" ID="{41F76D88-3288-4A25-9260-B58D712DA91C}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13913.0385487528"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="978.260869565217"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Mafia_Mel2" ID="{4752617B-7F38-474D-86FC-0D9E923F8F7A}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_Mafia_PianoGroove2" ID="{A4E4C78A-6AB5-42DB-A9DD-F70AFF27FF04}" ShortID="948749900">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{5AD84041-8D8A-4EF6-8991-0B4C2652353B}" ShortID="47447200">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}" WorkUnitID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{9F0E3AAC-F6AF-448C-8D79-60144362697B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-100</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>30</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_Mafia_PianoGroove2" ID="{ECD7E7DE-DC16-4AC0-A423-FD558965C55B}" ShortID="778647489">
+											<Language>SFX</Language>
+											<AudioFile>Mus_Mafia_PianoGroove2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{DEAEF58E-4B18-427B-800D-99807839E47E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{9AD99442-9E05-4F53-B10A-5DB362C61D88}">
+											<ClipList>
+												<MusicClip Name="Mus_Mafia_PianoGroove2" ID="{C9678F1B-5D52-46B6-88F5-305A8BFCDA59}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="14782.6077097506"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="160.913726884079"/>
+														<Property Name="PlayAt" Type="Real64" Value="869.565217391304"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Mafia_PianoGroove2" ID="{ECD7E7DE-DC16-4AC0-A423-FD558965C55B}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_Mafia_Basse2" ID="{5BB24EB8-8261-4A3B-923A-34CE0B546C6C}" ShortID="231323972">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{8495DDBC-A712-42C0-B595-00BE9910A721}" ShortID="694995047">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}" WorkUnitID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{0E5C7C57-FA0A-4419-8B1F-2322CE242B2E}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-100</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>70</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_Mafia_Basse2" ID="{3E0AEA20-DEA4-49B2-AC85-CAC9266BE60A}" ShortID="531260678">
+											<Language>SFX</Language>
+											<AudioFile>Mus_Mafia_Basse2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{E047C11C-3DF1-494E-942A-E19DFCB40D3D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{574C600C-0310-4934-BF0D-69399D8CD59A}">
+											<ClipList>
+												<MusicClip Name="Mus_Mafia_Basse2" ID="{166549AF-9702-4A86-97C6-4CB5CADBCF38}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="14782.6077097506"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="160.913726884077"/>
+														<Property Name="PlayAt" Type="Real64" Value="869.565217391304"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Mafia_Basse2" ID="{3E0AEA20-DEA4-49B2-AC85-CAC9266BE60A}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_Mafia_Percs" ID="{F5B4F32D-FDCA-4ACC-8B22-C2AD9228E6AC}" ShortID="812855722">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_Mafia_Percs" ID="{8F31AAA8-6CB6-4917-AF62-A1609E112387}" ShortID="389059121">
+											<Language>SFX</Language>
+											<AudioFile>Mus_Mafia_Percs.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1067018897"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{AD0088AB-8866-4410-B46E-8530600EFD21}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{2C0E47D4-A5A9-49F8-B03D-7BB03ADAD111}">
+											<ClipList>
+												<MusicClip Name="Mus_Mafia_Percs" ID="{71082D2B-BAA6-4DE1-9EF0-4CAABF968D2A}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13043.4693877551"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Mafia_Percs" ID="{8F31AAA8-6CB6-4917-AF62-A1609E112387}"/>
+												</MusicClip>
+												<MusicClip Name="Mus_Mafia_Percs" ID="{01522006-776C-4048-8C5E-56147BC14220}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="1304.34782608695"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="4782.60869565217"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="160.913726884077"/>
+														<Property Name="PlayAt" Type="Real64" Value="11304.347826087"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Mafia_Percs" ID="{8F31AAA8-6CB6-4917-AF62-A1609E112387}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{63484538-1B37-42AD-B724-2F7C8C2BB46E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>1.30435</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4.78261</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{9A0B3900-39A3-48C1-9F30-7323C5148AA4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>1.30435</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4.78261</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{E4D685BE-9D8C-480B-9402-41CD8E7A630E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>1.30435</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4.78261</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_Mafia_Mel2_Attack" ID="{FD49A0E8-0FE9-4CB3-BA43-719EA8CD84F7}" ShortID="13369302">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{9DBEF240-E5DC-4C08-858D-BDA10DD014D6}" ShortID="474643280">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}" WorkUnitID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{F18D377A-9032-4DC7-B279-E4343A691F3A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-100</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>30</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_Mafia_Mel2_Attack" ID="{54A5ADBC-0AD8-4D1E-91B8-5C12746C917B}" ShortID="607722893">
+											<Language>SFX</Language>
+											<AudioFile>Mus_Mafia_Mel2_Attack.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{B018C9A9-5102-4566-9A48-95BE61CB6D90}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{BA65F22E-45B1-43E8-95E1-DCF2F2702DEA}">
+											<ClipList>
+												<MusicClip Name="Mus_Mafia_Mel2_Attack" ID="{8FBB9510-CD3F-4089-9CB6-67C28D84B714}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="16086.9614512472"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="869.565217391305"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Mafia_Mel2_Attack" ID="{54A5ADBC-0AD8-4D1E-91B8-5C12746C917B}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_SpaceCity_AccInt2" ID="{3821E3EC-39D1-4CCA-BFF5-9628AA240EB8}" ShortID="555332368">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{BACCA100-CED7-46EB-8FDB-8582FFD2844B}" ShortID="1052945557">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}" WorkUnitID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{FE8A10C9-B838-45B9-AD08-4A6C41671DF4}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-100</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>-50</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>-30</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_SpaceCity_AccInt2" ID="{C03555FF-B19A-4CB3-9B8E-DF145214D91A}" ShortID="76495013">
+											<Language>SFX</Language>
+											<AudioFile>Mus_SpaceCity_AccInt2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{4A17B94A-B816-40C2-8F7D-62E179CBB897}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{7369ED61-61BE-4262-B836-43E3019D6BD1}">
+											<ClipList>
+												<MusicClip Name="Mus_SpaceCity_AccInt2" ID="{B502DC2F-FF2B-4B15-858D-C60B16CD25C8}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="16086.9614512472"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="869.565217391305"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_SpaceCity_AccInt2" ID="{C03555FF-B19A-4CB3-9B8E-DF145214D91A}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_SpaceCity_Basse2" ID="{D0DC8BB5-FAB7-450D-8A1D-4144C60A0D07}" ShortID="121403967">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{00B0B8C8-BEB3-4826-A7E0-8C195F2DDFB4}" ShortID="74256603">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}" WorkUnitID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{3D0C102E-6254-47C9-A6AF-03A5D466AF99}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-100</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>-30</XPos>
+																<YPos>-0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>-10</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_SpaceCity_Basse2" ID="{3AB1C0D1-CF7B-4552-880F-217543BD95D7}" ShortID="119667492">
+											<Language>SFX</Language>
+											<AudioFile>Mus_SpaceCity_Basse2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{D0F596EB-2EAC-479B-84A6-6FDF63356116}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{9239CAE1-E7EE-4421-A6C8-5B33CAAD812F}">
+											<ClipList>
+												<MusicClip Name="Mus_SpaceCity_Basse2" ID="{31E74830-6524-4AD4-85E3-4EDA8BFA2A58}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="16086.9614512472"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="869.565217391305"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_SpaceCity_Basse2" ID="{3AB1C0D1-CF7B-4552-880F-217543BD95D7}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{7F76A9B9-AE90-4950-9A80-77E50D99AB66}">
+									<PropertyList>
+										<Property Name="TimeMs" Type="Real64" Value="1739.13043478261"/>
+									</PropertyList>
+								</MusicCue>
+								<MusicCue Name="Exit Cue" ID="{799AC074-512C-41E2-ADC3-C92E52A3F1BC}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="15652.1739130435"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{EC707090-8246-42A6-BA66-D154396D7D97}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{059E83D5-65F2-4812-9610-6A1544F9E870}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{82F1AA93-ED04-4D55-8B74-2B60889A72B6}" ShortID="310429658">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{6991C02A-4A42-4C3A-9ECE-37631DE693DD}" ShortID="217429739">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="2"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Mus_Mafia_Mel1" ID="{9561EFE2-30A3-4783-ADED-BC67FABB7D4A}"/>
+								</MusicPlaylistItem>
+								<MusicPlaylistItem Name="" ID="{22D2C9F9-6ECA-424F-9400-0C807DAEA334}" ShortID="924834769">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Mus_Mafia_Mel2" ID="{4470DFF9-0DAE-45A0-A210-65465555AFC0}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+				<MusicPlaylistContainer Name="MenuMusic" ID="{35401D97-AD49-449E-AC25-BE99338699BC}" ShortID="969753279">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="138"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Mus_Menu_AccInt1" ID="{156CD421-B6E1-4309-84B2-1A90D30A7D40}" ShortID="199361240">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="17391.3043478261"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Mus_Menu_AccInt1" ID="{D1E68DBF-7ADB-4987-B937-7EC7B5DBD7C9}" ShortID="734584219">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_Menu_AccInt1" ID="{97C36864-31F0-4E6A-9238-0837F18169A9}" ShortID="159393971">
+											<Language>SFX</Language>
+											<AudioFile>Mus_Menu_AccInt1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{817EA19E-63A2-4A4E-AB17-1E9CC46AA717}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{CB7A2A79-9D54-4456-B7B2-F4E57837122E}">
+											<ClipList>
+												<MusicClip Name="Mus_Menu_AccInt1" ID="{0528D5A7-6796-470D-B7F3-F27EDE078A57}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13043.4693877551"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Menu_AccInt1" ID="{97C36864-31F0-4E6A-9238-0837F18169A9}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_Menu_Basse1" ID="{2264ECA9-3989-4A53-89D5-A47503DC493B}" ShortID="246365612">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_Menu_Basse1" ID="{C6D021E9-5A30-429C-8260-128EB25688C2}" ShortID="547343145">
+											<Language>SFX</Language>
+											<AudioFile>Mus_Menu_Basse1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{AEACD06B-6027-4058-9162-FF1481E1E3A0}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{34422966-567A-4707-B88F-0E1B996FE8DE}">
+											<ClipList>
+												<MusicClip Name="Mus_Menu_Basse1" ID="{21EE01CB-AE24-4CA6-9C6F-790A685C1D40}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13043.4693877551"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Menu_Basse1" ID="{C6D021E9-5A30-429C-8260-128EB25688C2}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_Menu_Mel1" ID="{2445A884-C86C-4CAD-B407-031AA48C7729}" ShortID="1028400422">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_Menu_Mel1" ID="{E0889BD6-9A54-4CC6-8D08-DE69858A0306}" ShortID="541277802">
+											<Language>SFX</Language>
+											<AudioFile>Mus_Menu_Mel1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{A454CA6E-BE78-485C-93E5-B34AD1E956F7}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{B4F7AA0C-ABE6-456D-8007-B05DC526F43D}">
+											<ClipList>
+												<MusicClip Name="Mus_Menu_Mel1" ID="{21CE7B3A-87BA-48B8-85F8-6440D1CD1B9B}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13043.4693877551"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Menu_Mel1" ID="{E0889BD6-9A54-4CC6-8D08-DE69858A0306}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{BF7B581D-867C-462D-B542-8482B3D18D24}">
+									<PropertyList>
+										<Property Name="TimeMs" Type="Real64" Value="1739.13043478261"/>
+									</PropertyList>
+								</MusicCue>
+								<MusicCue Name="Exit Cue" ID="{BD916F89-E84A-4A25-826A-5E13114E283E}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="12173.9130434783"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{C09E7040-B736-4597-A1CA-851BB7A1A8AC}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{953FF307-970F-476B-B743-63E6DC657524}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{BAF9B8E4-8944-4DE1-AB46-FE512BAE6E72}" ShortID="113674026">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{4E054D78-18EE-410D-AEC7-32ED43ACE269}" ShortID="790326806">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Mus_Menu_AccInt1" ID="{156CD421-B6E1-4309-84B2-1A90D30A7D40}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

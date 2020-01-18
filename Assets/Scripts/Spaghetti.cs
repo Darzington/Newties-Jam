@@ -46,13 +46,7 @@ public class Spaghetti : MonoBehaviour
 
     private void Update()
     {
-        if (closestHole != null)
-        {
-            foreach (Rigidbody rb in spagRBs)
-            {
-                rb.AddForce((closestHole.transform.position - rb.transform.position) * 4, ForceMode.Acceleration);
-            }
-        }
+
     }
 
     private IEnumerator SelfDestruct()
@@ -63,6 +57,15 @@ public class Spaghetti : MonoBehaviour
         foreach (Rigidbody rb in spagRBs)
         {
             meshes.Add(rb.gameObject.GetComponent<MeshRenderer>());
+        }
+
+        if (closestHole != null)
+        {
+            foreach (Rigidbody rb in spagRBs)
+            {
+                rb.AddForce((closestHole.transform.position - rb.transform.position) * 4, ForceMode.Acceleration);
+            }
+            yield return new WaitForSeconds(Time.deltaTime);
         }
 
         float startTime = Time.time, fadeTime = 3.0f;
