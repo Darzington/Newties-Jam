@@ -29,4 +29,9 @@ public class ScoreTracker : MonoBehaviour
         score += scoreToAddOrSubtract;
         score = Mathf.Min(0, score);
     }
+
+    public int GetScore()
+    {
+        return score;
+    }
 }
