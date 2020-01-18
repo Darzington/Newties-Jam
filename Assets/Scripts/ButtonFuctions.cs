@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ButtonFuctions : MonoBehaviour
 {
+    public void LoadLeaderboardIntro()
+    {
+        SceneManager.LoadScene("LeaderboardIntro");
+    }
+
     public void LoadLeaderboard()
     {
         SceneManager.LoadScene("Leaderboard");

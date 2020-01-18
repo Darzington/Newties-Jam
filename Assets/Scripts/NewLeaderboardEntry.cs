@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class NewLeaderboardEntry : MonoBehaviour
 {
     public Text name;
+    public int score = 0;
 
     public void AddEntry()
     {
@@ -21,7 +22,7 @@ public class NewLeaderboardEntry : MonoBehaviour
                     name.text = "No name";
                 }
 
-                writer.Write("\n" + name.text.Trim() + " " + 500);
+                writer.Write("\n" + name.text.Trim() + " " + score);
                 writer.Close();
                 writer.Dispose();
             }

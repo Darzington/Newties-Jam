@@ -17,7 +17,12 @@ public class PointNShoot : MonoBehaviour
         cursorIconHeight = reticule.height;
         cursorIconWidth = reticule.width;
     }
-       
+
+    private void OnDisable()
+    {
+        Cursor.visible = true;
+    }
+
     void OnGUI()
     {
         GUI.DrawTexture(new Rect(mousePosition.x - (cursorIconWidth / 2), mousePosition.y - (cursorIconHeight / 2), cursorIconWidth, cursorIconHeight), reticule);

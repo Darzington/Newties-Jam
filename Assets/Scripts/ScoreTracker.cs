@@ -6,10 +6,16 @@ using UnityEngine.UI;
 public class ScoreTracker : MonoBehaviour
 {
     [SerializeField] private Text scoreText;
+    private ScoreKeeper sk;
     private const string scoreTextBeginning = "Score: ";
 
     [SerializeField] private int scoreGainPerDeltaTime = 1;
     private int score = 0;
+
+    private void Start()
+    {
+        sk = FindObjectOfType<ScoreKeeper>();
+    }
 
     void Update()
     {
@@ -23,8 +29,11 @@ public class ScoreTracker : MonoBehaviour
         score = Mathf.Min(0, score);
     }
 
-    public int GetScore()
+    private void OnDisable()
     {
-        return score;
+        if (sk != null)
+        {
+            sk.score = this.score;
+        }
     }
 }
