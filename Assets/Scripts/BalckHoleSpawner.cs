@@ -1,23 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SpawnObstacle : MonoBehaviour
+public class BalckHoleSpawner : MonoBehaviour
 {
+    private GameObject[] lanes;
+    private Transform[] blackHolePos;
+    void Start()
+    {
+        lanes = GetComponentsInChildren<GameObject>();
+
+        for (int i = 0; i < 4; i++)
+        {
+            blackHolePos = lanes[i].GetComponentsInChildren<Transform>();
+        }
+    }
+
+    void Update()
+    {
+        foreach (Transform item in blackHolePos)
+        {
+            //if(!item.GetComponent)
+        }
+    }
+
+
+
+
     /*
-    [SerializeField]
-    new ParticleSystem particleSystem;
-
-    [SerializeField]
-    GameObject portal;
-
-    private Animator portalAnimator;
-    private SphereCollider sphereCollider;
-    private SpriteRenderer spriteRenderer;
-    private float spawningTime;
-    private Vector3 initialTriggerPosition;
-
-    private bool isRunning = false;
-
     private void Awake()
     {
         initialTriggerPosition = this.transform.localPosition;
