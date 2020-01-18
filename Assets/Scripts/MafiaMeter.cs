@@ -7,22 +7,21 @@ public class MafiaMeter : MonoBehaviour
 {
     [SerializeField] private Image marker, meterBase, redZone;
 
-    private float balance = 0, maxInEitherDirection, failBalance = 100;
+    private float balance = 0, desiredBalance = 0, maxInEitherDirection, failBalance = 100, balanceChangeTime = 0, adjustmentTime = 0.5f;
+    private Coroutine shifter;
     private bool isOver = false;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         float playableWidth = meterBase.gameObject.GetComponent<RectTransform>().rect.width - 2.0f * redZone.gameObject.GetComponent<RectTransform>().rect.width;
         maxInEitherDirection = playableWidth / 2.0f;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!isOver)
         {
+            balance = Mathf.Lerp(balance, desiredBalance, (Time.time - balanceChangeTime)/ adjustmentTime);
             Vector3 markerPosition = marker.transform.localPosition;
             markerPosition.x = (balance / failBalance) * maxInEitherDirection;
             marker.transform.localPosition = markerPosition;
@@ -43,6 +42,7 @@ public class MafiaMeter : MonoBehaviour
 
     public void ChangeBalance(int amountToAddOrSubtract)
     {
-        balance += amountToAddOrSubtract;
+        desiredBalance += amountToAddOrSubtract;
+        balanceChangeTime = Time.timeSinceLevelLoad;
     }
 }
