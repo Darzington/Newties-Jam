@@ -24,6 +24,6 @@ public class GameEventManager
     }
     
     public Action OnBlackHoleSizeUp;
-    public Action OnBlackHoleSizeDown;
+    public Action OnBlackHoleDestroy;
     
 }
