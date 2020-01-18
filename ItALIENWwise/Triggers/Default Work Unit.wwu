@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4CA84CF9-49BA-40F4-A34E-5BAA2388FA4D}" SchemaVersion="89">
 	<Triggers>
-		<WorkUnit Name="Default Work Unit" ID="{4CA84CF9-49BA-40F4-A34E-5BAA2388FA4D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4CA84CF9-49BA-40F4-A34E-5BAA2388FA4D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="Car_explosion" ID="{3561A822-C59F-4B0E-B943-B4021319135B}"/>
+				<Trigger Name="BlackHoleSchrink" ID="{27D084B3-574F-4EFF-8F83-F081D928B97D}"/>
+				<Trigger Name="Spaghetticaiton" ID="{C0AFF5FD-4597-4DC7-A674-8571A168E82C}"/>
+				<Trigger Name="blackHoleAppear" ID="{C14AA740-5204-42F1-BC7C-D7C345E1046F}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Triggers>
 </WwiseDocument>
