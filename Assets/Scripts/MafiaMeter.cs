@@ -23,9 +23,6 @@ public class MafiaMeter : MonoBehaviour
     {
         if (!isOver)
         {
-            //Do this for now, just to see it in action. The balance will actually be modified by player actions in-game
-            balance -= 0.1f;
-
             Vector3 markerPosition = marker.transform.localPosition;
             markerPosition.x = (balance / failBalance) * maxInEitherDirection;
             marker.transform.localPosition = markerPosition;

@@ -6,8 +6,8 @@ public class PointNShoot : MonoBehaviour
 {
     [SerializeField] private Texture2D reticule;
     [SerializeField] private GameObject laserPrefab;
+    [SerializeField] private Camera cam;
 
-    private Camera cam;
     private Vector2 mousePosition = Vector2.zero;
     private float cursorIconWidth, cursorIconHeight;
 
@@ -16,7 +16,6 @@ public class PointNShoot : MonoBehaviour
         Cursor.visible = false;
         cursorIconHeight = reticule.height;
         cursorIconWidth = reticule.width;
-        cam = Camera.main;
     }
        
     void OnGUI()
