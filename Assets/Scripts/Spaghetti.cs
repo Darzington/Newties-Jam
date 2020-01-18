@@ -21,8 +21,6 @@ public class Spaghetti : MonoBehaviour
         GameObject[] blackHoles = GameObject.FindGameObjectsWithTag("BlackHole");
         if (blackHoles.Length > 0)
         {
-            closestHole = blackHoles[0];
-
             Vector3 closestObject = Vector3.negativeInfinity;
             for (int i = 0; i < blackHoles.Length; i++)
             {
@@ -38,9 +36,11 @@ public class Spaghetti : MonoBehaviour
 
     private void LaunchSpaghetti()
     {
+        int launchStrength = 10;
         foreach (Rigidbody rb in spagRBs)
         {
-            rb.AddForce(new Vector3(Random.Range(-15, 15), Random.Range(-15, 15), Random.Range(-15, 15)), ForceMode.VelocityChange);
+            rb.AddForce(new Vector3(Random.Range(-launchStrength, launchStrength), 
+                Random.Range(-launchStrength, launchStrength), Random.Range(-launchStrength, launchStrength)), ForceMode.VelocityChange);
         }
     }
 
@@ -51,35 +51,24 @@ public class Spaghetti : MonoBehaviour
 
     private IEnumerator SelfDestruct()
     {
-        yield return new WaitForSeconds(4.0f);
-
-        List<MeshRenderer> meshes = new List<MeshRenderer>();
-        foreach (Rigidbody rb in spagRBs)
+        yield return new WaitForSeconds(0.1f);
+        float startTime = Time.time, floatTime = 4.0f;
+        float progress = 0.0f;
+        while (progress < 1.0f)
         {
-            meshes.Add(rb.gameObject.GetComponent<MeshRenderer>());
-        }
-
-        if (closestHole != null)
-        {
-            foreach (Rigidbody rb in spagRBs)
+            progress = (Time.time - startTime) / floatTime;
+            if (closestHole != null)
             {
-                rb.AddForce((closestHole.transform.position - rb.transform.position) * 4, ForceMode.Acceleration);
+                foreach (Rigidbody rb in spagRBs)
+                {
+                    rb.AddForce((closestHole.transform.position - rb.transform.position) * progress * 5, ForceMode.Acceleration);
+                }
+                yield return new WaitForSeconds(Time.deltaTime);
             }
-            yield return new WaitForSeconds(Time.deltaTime);
-        }
-
-        float startTime = Time.time, fadeTime = 3.0f;
-        float progress = 1.0f;
-        while (progress > 0.0f)
-        {
-            foreach (MeshRenderer mesh in meshes)
+            else
             {
-                progress = Mathf.Lerp(1, 0, (Time.time - startTime) / fadeTime);
-                Color currentColor = mesh.material.color;
-                mesh.material.color = new Color(currentColor.r, currentColor.g, currentColor.b, progress);
-                Debug.Log(progress);
+                progress = 1.0f;
             }
-            yield return new WaitForSeconds(Time.deltaTime);
         }
 
         Destroy(this.gameObject);
