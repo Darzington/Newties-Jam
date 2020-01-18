@@ -29,6 +29,11 @@ public class CarSpawner : MonoBehaviour
         Rigidbody rb = ship.GetComponent<Rigidbody>();
         rb.AddForce(directionVector * moveSpeed, ForceMode.VelocityChange);
 
+        if (dir == Direction.Left)
+        {
+            ship.transform.Rotate(0, 180, 0, Space.World);
+        }
+
         yield return new WaitForSeconds(timeBetweenSpawns + Random.Range(-randomSpawnTimeOffset, randomSpawnTimeOffset));
 
         StartCoroutine(SpawnCarsForever());

@@ -25,7 +25,7 @@ public class MafiaMeter : MonoBehaviour
         if (!isOver)
         {
             balance = Mathf.Lerp(balance, desiredBalance, (Time.time - balanceChangeTime)/ adjustmentTime);
-            meterMusic.SetValue(wwiseObj, balance);
+            meterMusic.SetValue(wwiseObj, -balance);
             Vector3 markerPosition = marker.transform.localPosition;
             markerPosition.x = (balance / failBalance) * maxInEitherDirection;
             marker.transform.localPosition = markerPosition;
