@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour, IHittable
 {
-    [SerializeField] private int shootShipBalanceChange = 10, shipSpaghettifyBalanceChange = 4;
+    private int shootShipBalanceChange = 5, shipSpaghettifyBalanceChange = 4;
 
     public void Hit()
     {
