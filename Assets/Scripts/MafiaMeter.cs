@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class MafiaMeter : MonoBehaviour
 {
+    public AK.Wwise.RTPC meterMusic;
+
+    public GameObject wwiseObj;
+
     [SerializeField] private Image marker, meterBase, redZone;
 
     private float balance = 0, maxInEitherDirection, failBalance = 100;
@@ -44,5 +48,6 @@ public class MafiaMeter : MonoBehaviour
     public void ChangeBalance(int amountToAddOrSubtract)
     {
         balance += amountToAddOrSubtract;
+        meterMusic.SetValue(wwiseObj, balance);
     }
 }

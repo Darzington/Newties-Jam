@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PointNShoot : MonoBehaviour
 {
+    public AK.Wwise.Event sndLaser;
+
+    public GameObject wwiseObj;
+
     [SerializeField] private Texture2D reticule;
     [SerializeField] private GameObject laserPrefab;
     [SerializeField] private Camera cam;
@@ -38,6 +42,7 @@ public class PointNShoot : MonoBehaviour
             RaycastHit RayHit;
             if (Physics.Raycast(ray, out RayHit))
             {
+                sndLaser.Post(wwiseObj);
                 GameObject laser = Instantiate(laserPrefab);
                 laser.transform.position = cam.transform.position + new Vector3(0, 0, 1);
 

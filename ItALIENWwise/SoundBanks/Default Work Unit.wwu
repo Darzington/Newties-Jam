@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9DB24C31-49EB-4BC4-B6D4-BEBB491319A3}" SchemaVersion="89">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{9DB24C31-49EB-4BC4-B6D4-BEBB491319A3}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="New_SoundBank" ID="{EC484ECE-C4A1-443B-88A4-4B02977F9990}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Mus_Game_Start" ID="{34F4167D-D328-4213-A3C3-F88A74075D8B}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="MenuStart" ID="{D872DB79-39EF-4431-B472-D9EE78AA1F4E}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="LaserShot" ID="{5D190101-CB91-4576-9DDD-9ABC513A8591}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Mus_Game_Stop" ID="{377F9B59-2DFF-45C8-B21D-D04671C6B1C0}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Spaghettication" ID="{452EFEAE-8791-486E-B394-6C0C3AFCC4B6}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Car_Explosion" ID="{57808510-5966-4B0A-92EA-3672E3C1E800}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="SpaghettiPops" ID="{C393A771-3BE4-4C7D-9189-2C48BD4D6609}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="MenuStop" ID="{CBC37116-0C80-4DCA-9C35-A7C871AEC6D7}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

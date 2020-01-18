@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Mus_Game_Start" ID="{34F4167D-D328-4213-A3C3-F88A74075D8B}">
+					<ChildrenList>
+						<Action Name="" ID="{525C5187-F243-43F4-8B11-EA2A4E570953}" ShortID="819550462">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GameMusic" ID="{6C1E41B6-46DC-4E91-8A2D-8C97322D33CF}" WorkUnitID="{836D5949-112A-41DF-9CCC-CD08E64F726E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E4504FDE-A466-4CFC-A9E1-C93EF8355AB2}" ShortID="981640261">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}" WorkUnitID="{CB7FF628-3F5D-4A71-B5C7-7F18AB2CF3A7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Spaghettication" ID="{452EFEAE-8791-486E-B394-6C0C3AFCC4B6}">
+					<ChildrenList>
+						<Action Name="" ID="{BEF60BC3-7C12-4D0E-BFAB-AC4F666A0FF4}" ShortID="944407865">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spaghettication" ID="{CC15A232-6B0E-4F12-B76F-C60002D388C8}" WorkUnitID="{6845ADAF-4012-4965-8C7E-36513FBF0D85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LaserShot" ID="{5D190101-CB91-4576-9DDD-9ABC513A8591}">
+					<ChildrenList>
+						<Action Name="" ID="{650757AA-9EAC-4BFB-B86D-555FA8489C7A}" ShortID="367326682">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LaserShots" ID="{5BD4B8FE-075E-45A0-8913-9FA6CBF6EC66}" WorkUnitID="{6845ADAF-4012-4965-8C7E-36513FBF0D85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Car_Explosion" ID="{57808510-5966-4B0A-92EA-3672E3C1E800}">
+					<ChildrenList>
+						<Action Name="" ID="{0E8ABF60-8A03-4358-98A6-14E29F597094}" ShortID="949094720">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Desintegration" ID="{FBA4049A-0201-4F54-9289-76EA2F567A2D}" WorkUnitID="{6845ADAF-4012-4965-8C7E-36513FBF0D85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuStart" ID="{D872DB79-39EF-4431-B472-D9EE78AA1F4E}">
+					<ChildrenList>
+						<Action Name="" ID="{8F3FF6BB-29AE-49F0-AEC4-5E6E8F2A96C1}" ShortID="855395260">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuMusic" ID="{35401D97-AD49-449E-AC25-BE99338699BC}" WorkUnitID="{836D5949-112A-41DF-9CCC-CD08E64F726E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuStop" ID="{CBC37116-0C80-4DCA-9C35-A7C871AEC6D7}">
+					<ChildrenList>
+						<Action Name="" ID="{33F5A90D-ACC7-4300-8222-C8FA81FFB655}" ShortID="149265416">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuMusic" ID="{35401D97-AD49-449E-AC25-BE99338699BC}" WorkUnitID="{836D5949-112A-41DF-9CCC-CD08E64F726E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mus_Game_Stop" ID="{377F9B59-2DFF-45C8-B21D-D04671C6B1C0}">
+					<ChildrenList>
+						<Action Name="" ID="{EB1B4C27-4294-4A44-BC92-240C12AD5C85}" ShortID="305237057">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GameMusic" ID="{6C1E41B6-46DC-4E91-8A2D-8C97322D33CF}" WorkUnitID="{836D5949-112A-41DF-9CCC-CD08E64F726E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SpaghettiPops" ID="{C393A771-3BE4-4C7D-9189-2C48BD4D6609}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

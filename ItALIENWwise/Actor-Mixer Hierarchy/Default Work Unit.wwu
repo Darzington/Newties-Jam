@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6845ADAF-4012-4965-8C7E-36513FBF0D85}" SchemaVersion="89">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{6845ADAF-4012-4965-8C7E-36513FBF0D85}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="LaserShots" ID="{5BD4B8FE-075E-45A0-8913-9FA6CBF6EC66}" ShortID="202284933">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>34</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{9163551A-8FDB-46A1-B4DE-939CECE0326D}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="LaserShots-001" ID="{C5182B68-F4B7-464F-BB3E-F75448C2AA62}" ShortID="82270441">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserShots-001" ID="{DD2C4F7E-1B36-4C9F-A8B8-8F7B236CEC7B}" ShortID="317089563">
+									<Language>SFX</Language>
+									<AudioFile>LaserShots-001.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserShots-001" ID="{DD2C4F7E-1B36-4C9F-A8B8-8F7B236CEC7B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LaserShots-002" ID="{19FFE4A6-81A1-47D1-9B69-54EE8239CD20}" ShortID="955856795">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserShots-002" ID="{90192CE9-ABE4-4A40-A2B6-688A893F0CB5}" ShortID="720581476">
+									<Language>SFX</Language>
+									<AudioFile>LaserShots-002.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserShots-002" ID="{90192CE9-ABE4-4A40-A2B6-688A893F0CB5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LaserShots-003" ID="{AE9BF44B-7613-4E02-9B88-91736AE2AE4F}" ShortID="465662355">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserShots-003" ID="{423CBB95-1B76-4FA1-AB36-56F851827EB3}" ShortID="198561537">
+									<Language>SFX</Language>
+									<AudioFile>LaserShots-003.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserShots-003" ID="{423CBB95-1B76-4FA1-AB36-56F851827EB3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="Desintegration" ID="{FBA4049A-0201-4F54-9289-76EA2F567A2D}" ShortID="412373222">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Desintegration" ID="{05AF6D4C-DFDB-46BB-9DC1-B18E6F22C5E7}" ShortID="650341219">
+							<Language>SFX</Language>
+							<AudioFile>Desintegration.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Desintegration" ID="{05AF6D4C-DFDB-46BB-9DC1-B18E6F22C5E7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Spaghettication" ID="{CC15A232-6B0E-4F12-B76F-C60002D388C8}" ShortID="652440237">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Spaghettication" ID="{03B1526F-2048-4061-90BC-85204CE1FC51}" ShortID="296449886">
+							<Language>SFX</Language>
+							<AudioFile>Spaghettication.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Spaghettication" ID="{03B1526F-2048-4061-90BC-85204CE1FC51}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
