@@ -393,7 +393,7 @@ MonoBehaviour:
   reticule: {fileID: 2800000, guid: acd53e91efacfe04f9c4c223c15719de, type: 3}
   laserPrefab: {fileID: 4349561217622616868, guid: a934f74d30a22924d9bfd3358b1f12fd,
     type: 3}
-  orthoCam: {fileID: 395764703}
+  cam: {fileID: 395764703}
 --- !u!4 &1675509255
 Transform:
   m_ObjectHideFlags: 0
