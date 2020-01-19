@@ -131,6 +131,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6185857e9bb686b43bbce9c81b390d1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wwiseObj: {fileID: 0}
+  create:
+    ID: 1884632487
+    valueGuid: 3035d9bb3174b4419a31924c88802611
+  destroy:
+    ID: 1277278512
+    valueGuid: 3a054bca2200974e90d4f2ec6e3c5f2a
+  spaghettify:
+    ID: -1331560256
+    valueGuid: aefe2e4591876e48b3946c0c3afcc4b6
 --- !u!198 &2077015395
 ParticleSystem:
   m_ObjectHideFlags: 0

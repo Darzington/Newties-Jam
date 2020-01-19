@@ -157,6 +157,10 @@ MonoBehaviour:
     type: 3}
   floatingTextPrefab: {fileID: 2320062983508105055, guid: e0adfa725f17edf40a1b66dc9e1d2c55,
     type: 3}
+  wwiseObj: {fileID: 0}
+  explosionEventBoom:
+    ID: 2069380085
+    valueGuid: 1085805766590a4b92ea3672e3c1e800
 --- !u!1001 &1297750484615793971
 PrefabInstance:
   m_ObjectHideFlags: 0

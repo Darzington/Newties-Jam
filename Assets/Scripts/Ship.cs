@@ -8,15 +8,22 @@ public class Ship : MonoBehaviour, IHittable
     [SerializeField] GameObject spaghetti, explosion;
     [SerializeField] GameObject floatingTextPrefab;
 
+    public GameObject wwiseObj;
+    public AK.Wwise.Event explosionEventBoom;
+
     private void Start()
     {
         transform.GetChild(Random.Range(0, transform.childCount)).gameObject.SetActive(true);
+
+        wwiseObj = FindObjectOfType<AkInitializer>().gameObject;
     }
 
     public void Hit()
     {
         DestroyAndChangeBalance(shootShipBalanceChange);
         GameObject splode = Instantiate(explosion, transform.position, Quaternion.identity);
+        explosionEventBoom.Post(wwiseObj);
+
 
         if (floatingTextPrefab != null)
         {

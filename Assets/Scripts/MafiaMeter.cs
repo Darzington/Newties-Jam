@@ -9,6 +9,8 @@ public class MafiaMeter : MonoBehaviour
     public AK.Wwise.RTPC meterMusic;
 
     public GameObject wwiseObj;
+    public AK.Wwise.Event endLevel;
+    public AK.Wwise.Event stopMusic;
 
     [SerializeField] private Image marker, meterBase;
     [SerializeField] private Text endText;
@@ -54,6 +56,9 @@ public class MafiaMeter : MonoBehaviour
 
     private IEnumerator EndGame()
     {
+        endLevel.Post(wwiseObj);
+        stopMusic.Post(wwiseObj);
+
         string leftEnding = "You destroyed too many black holes, the Risotto family has put out a hit on you!";
         string rightEnding = "You let the black holes spaghettify too many victims, you're going to jail!";
 
