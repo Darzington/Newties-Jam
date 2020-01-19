@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ScoreKeeper : MonoBehaviour
 {
     [HideInInspector] public int score;
+    [HideInInspector] public string name;
 
     private void Start()
     {
