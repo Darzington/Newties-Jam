@@ -30,10 +30,11 @@ public class PointNShoot : MonoBehaviour
         cooldownOverlay.gameObject.SetActive(false);
 
         redCross.SetActive(false);
-        if(SceneManager.GetActiveScene().name == "Level")
+        if(SceneManager.GetActiveScene().name == "Level" || SceneManager.GetActiveScene().name == "Level_Miled")
         {
             doCooldown = true;
         }
+        
 
     }
 
@@ -51,7 +52,7 @@ public class PointNShoot : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1") && isOnCooldown && !inWaitASecCor)
         {
-            StartCoroutine(WaitASec());
+            StartCoroutine(WaitASec(0.2f));
         }        
 
         if (Input.GetButtonDown("Fire1") && !isOnCooldown)
@@ -81,22 +82,27 @@ public class PointNShoot : MonoBehaviour
         }       
     }
 
-    private IEnumerator WaitASec()
+    private IEnumerator WaitASec(float time)
     {
         redCross.SetActive(true);
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(time);
         redCross.SetActive(false);
     }
 
     private IEnumerator DoCooldown()
     {
+        Debug.Log("AM I HERER !!!!");
         isOnCooldown = true;
         cooldownOverlay.gameObject.SetActive(true);
         float startTime = Time.time;
         float progress = 0;
+        RectTransform rt = cooldownOverlay.GetComponent<RectTransform>();
         while (progress < 1.0f)
         {
             progress = Mathf.Lerp(0, 1, (Time.time - startTime) / cooldownTime);
+            float valueToInterpolate = Mathf.Lerp(150, 0, (Time.time - startTime) / cooldownTime);
+            rt.sizeDelta = new Vector2(valueToInterpolate, valueToInterpolate);
+
             yield return new WaitForSeconds(Time.deltaTime);
         }
 
