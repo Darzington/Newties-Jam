@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StarwarsScroller : MonoBehaviour
 {
-    public float scrollSpeed = 0.1f;
+    public float scrollSpeed;
 
     // Start is called before the first frame update
     void Start()

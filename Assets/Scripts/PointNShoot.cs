@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PointNShoot : MonoBehaviour
@@ -16,7 +17,7 @@ public class PointNShoot : MonoBehaviour
 
     private Vector2 mousePosition = Vector2.zero;
     private float cursorIconWidth, cursorIconHeight, cooldownTime = 0.2f;
-    private bool isOnCooldown = false;
+    private bool isOnCooldown = false, doCooldown = false;
 
     void Start()
     {
@@ -24,6 +25,11 @@ public class PointNShoot : MonoBehaviour
         cursorIconHeight = reticule.height;
         cursorIconWidth = reticule.width;
         cooldownOverlay.gameObject.SetActive(false);
+
+        if(SceneManager.GetActiveScene().name == "Level")
+        {
+            doCooldown = true;
+        }
     }
 
     private void OnDisable()
@@ -56,7 +62,10 @@ public class PointNShoot : MonoBehaviour
                 laser.transform.rotation = Quaternion.LookRotation(direction);
                 laser.transform.eulerAngles += startRotation;
 
-                StartCoroutine(DoCooldown());
+                if (doCooldown)
+                {
+                    StartCoroutine(DoCooldown());
+                }
             }
         }
     }
