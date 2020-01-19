@@ -552,7 +552,7 @@ RectTransform:
   m_GameObject: {fileID: 846580703}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 2027201152}
   m_RootOrder: 0
@@ -560,7 +560,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 900, y: 120}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &846580705
 MonoBehaviour:
@@ -582,7 +582,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c381c29bac0ed6c47bf3b03028ebd4a5, type: 3}
-    m_FontSize: 20
+    m_FontSize: 100
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -591,9 +591,19 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Enter your name:'
+  m_Text: "In ancient times, the streets of \nMontreal were rife with potholes. \nSome
+    things never change.\r\n\r\nThe year is 2400, and the advanced \nitALIEN species
+    rules the streets. \nThe Risotto crime family controls \neverything. These ruthless
+    itALIENs \nbecome gleeful when the black holes \non their roads spaghettify motorists,
+    but \nbecome wrathful when their black \nholes are destroyed. \r\n\r\nYou, a
+    lone hero, must balance shooting \nblack holes and angering the mafia, and \nshooting
+    ships or allowing some victims \nto be spaghettified in the black holes to \nappease
+    the mafia. However, your gun \nis faulty and will reload more slowly as \nyou
+    use it! You must strategically pick \nyour target in order to maintain balance
+    \nas long as possible along Montreal\u2019s \nmain thoroughfare, The Leche Way,
+    \nbut remember that black holes,\n like the potholes of old, always return.\r\n"
 --- !u!222 &846580706
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -952,14 +962,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027201148}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.16818547, y: -0, z: -0, w: 0.9857554}
+  m_LocalPosition: {x: 0, y: 0, z: 56.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 846580704}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 19.365002, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
