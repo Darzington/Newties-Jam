@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="89">
-	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1579387681" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1579460319" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Attenuations\Default Work Unit.wwu" DateLow="1579362091" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Audio Devices\Default Work Unit.wwu" DateLow="1579362090" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="1579362090" DateHigh="0"/>
@@ -9,10 +9,10 @@
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1579362091" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Effects\Default Work Unit.wwu" DateLow="1579362091" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Effects\Factory Effects.wwu" DateLow="1536675441" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Events\Default Work Unit.wwu" DateLow="1579389672" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Events\Default Work Unit.wwu" DateLow="1579460290" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Game Parameters\Default Work Unit.wwu" DateLow="1579377478" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1579389747" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\ItALIENWwise.TempAccount.wsettings" DateLow="1579391820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1579458910" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\ItALIENWwise.TempAccount.wsettings" DateLow="1579460682" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\ItALIENWwise.wproj" DateLow="1579380889" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1579362091" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Mixing Sessions\Default Work Unit.wwu" DateLow="1579362090" DateHigh="0"/>
@@ -20,8 +20,8 @@
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Presets\Default Work Unit.wwu" DateLow="1579362090" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Queries\Default Work Unit.wwu" DateLow="1579362091" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Queries\Factory Queries.wwu" DateLow="1536675441" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\SoundBanks\Default Work Unit.wwu" DateLow="1579389910" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1579391749" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\SoundBanks\Default Work Unit.wwu" DateLow="1579460660" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1579460290" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\States\Default Work Unit.wwu" DateLow="1579362091" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Switches\Default Work Unit.wwu" DateLow="1579362091" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\Triggers\Default Work Unit.wwu" DateLow="1579389349" DateHigh="0"/>

@@ -99,6 +99,11 @@
 				</RandomSequenceContainer>
 				<Sound Name="Desintegration" ID="{FBA4049A-0201-4F54-9289-76EA2F567A2D}" ShortID="412373222">
 					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-8</Value>
@@ -125,6 +130,11 @@
 				</Sound>
 				<Sound Name="Spaghettication" ID="{CC15A232-6B0E-4F12-B76F-C60002D388C8}" ShortID="652440237">
 					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-8</Value>
@@ -154,6 +164,11 @@
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
 								<Value>27</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Lowpass" Type="int16">
@@ -195,6 +210,11 @@
 				</Sound>
 				<Sound Name="blackHoleAppear" ID="{F65D3D23-C896-40CC-B524-CB2B65729D00}" ShortID="959493459">
 					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -209,6 +229,9 @@
 							</ModifierList>
 						</Property>
 						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{40A3787A-0075-4978-982C-FAB3E110329E}"/>
@@ -238,7 +261,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-9</Value>
+								<Value>-5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
