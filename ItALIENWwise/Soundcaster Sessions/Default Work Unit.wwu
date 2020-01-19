@@ -14,6 +14,10 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Mus_Score_Start" ID="{3B1BDC85-E39C-4A56-B02A-9285DF263CC0}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Spaghettication" ID="{452EFEAE-8791-486E-B394-6C0C3AFCC4B6}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
 							<Position X="0" Y="3"/>
 						</Module>
@@ -30,18 +34,34 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Mus_Score_Stop" ID="{1B41D086-586A-4715-9523-8CCEA01CA8D0}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="LaserShot" ID="{5D190101-CB91-4576-9DDD-9ABC513A8591}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
 							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="BlackHoleAppear" ID="{BBD93530-7431-41B4-9A31-924C88802611}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Mus_IntroStart" ID="{25D458FC-79CA-4C84-A952-D9925A88708F}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="blackHoleSchrink" ID="{CA4B053A-0022-4E97-90D4-F2EC6E3C5F2A}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
 							<Position X="2" Y="3"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Mus_Intro_Stop" ID="{B5DE8803-EE0A-4EE5-8818-244CDC94C272}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="3" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}"/>
-							<Value>-87</Value>
+							<Value>-100</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

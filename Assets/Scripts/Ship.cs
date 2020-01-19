@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour, IHittable
 {
-    private int shootShipBalanceChange = 5, shipSpaghettifyBalanceChange = 4;
+    private int shootShipBalanceChange = 50, shipSpaghettifyBalanceChange = 4;
     [SerializeField] GameObject spaghetti;
+
+    private void Start()
+    {
+        transform.GetChild(Random.Range(0, 2)).gameObject.SetActive(false);
+    }
 
     public void Hit()
     {

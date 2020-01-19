@@ -5,7 +5,7 @@ using UnityEngine;
 public class BlackHole : MonoBehaviour, IHittable
 {
     private Animator animator;
-    private int blackHoleSize = 0;
+    private int blackHoleSize = 0, shootBlackHoleBalanceChange = -20;
     
     // Start is called before the first frame update
     void Start()
@@ -40,6 +40,12 @@ public class BlackHole : MonoBehaviour, IHittable
     private void destroyBlackHole()
     {
         OnDestroy();
+        MafiaMeter meter = FindObjectOfType<MafiaMeter>();
+        if (meter != null)
+        {
+            meter.ChangeBalance(shootBlackHoleBalanceChange);
+        }
+        Destroy(this.gameObject);
         // APPLY SOME COOL ANIMATION OR PARTICLE FX HERE !
     }
 
@@ -56,8 +62,8 @@ public class BlackHole : MonoBehaviour, IHittable
     void OnDestroy()
     {
         GameEventManager.Instance.OnBlackHoleSizeUp -= increaseBlackHole;
-        GameEventManager.Instance.OnBlackHoleDestroy -= destroyBlackHole;
-        Destroy(this.gameObject);
+        GameEventManager.Instance.OnBlackHoleSizeUp -= destroyBlackHole;
+
     }
 
     public void Hit()

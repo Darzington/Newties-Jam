@@ -29,13 +29,13 @@
 				</Event>
 				<Event Name="Spaghettication" ID="{452EFEAE-8791-486E-B394-6C0C3AFCC4B6}">
 					<ChildrenList>
-						<Action Name="" ID="{BEF60BC3-7C12-4D0E-BFAB-AC4F666A0FF4}" ShortID="944407865">
+						<Action Name="" ID="{F19B0079-178F-4127-A249-17425F01EB7E}" ShortID="362228650">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="35"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Spaghettication" ID="{CC15A232-6B0E-4F12-B76F-C60002D388C8}" WorkUnitID="{6845ADAF-4012-4965-8C7E-36513FBF0D85}"/>
+									<ObjectRef Name="Spaghetticaiton" ID="{C0AFF5FD-4597-4DC7-A674-8571A168E82C}" WorkUnitID="{4CA84CF9-49BA-40F4-A34E-5BAA2388FA4D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -57,13 +57,13 @@
 				</Event>
 				<Event Name="Car_Explosion" ID="{57808510-5966-4B0A-92EA-3672E3C1E800}">
 					<ChildrenList>
-						<Action Name="" ID="{0E8ABF60-8A03-4358-98A6-14E29F597094}" ShortID="949094720">
+						<Action Name="" ID="{B21B88DE-C1F5-4D8C-AEB3-DF244C3800FE}" ShortID="1068219331">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="35"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Desintegration" ID="{FBA4049A-0201-4F54-9289-76EA2F567A2D}" WorkUnitID="{6845ADAF-4012-4965-8C7E-36513FBF0D85}"/>
+									<ObjectRef Name="Car_explosion" ID="{3561A822-C59F-4B0E-B943-B4021319135B}" WorkUnitID="{4CA84CF9-49BA-40F4-A34E-5BAA2388FA4D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -118,13 +118,87 @@
 				<Event Name="SpaghettiPops" ID="{C393A771-3BE4-4C7D-9189-2C48BD4D6609}"/>
 				<Event Name="blackHoleSchrink" ID="{CA4B053A-0022-4E97-90D4-F2EC6E3C5F2A}">
 					<ChildrenList>
-						<Action Name="" ID="{D66F5174-1572-47FD-A7C0-FF731A94314E}" ShortID="390000058">
+						<Action Name="" ID="{631AA8CB-B53A-4F5B-AF9E-64A956F1AFFF}" ShortID="669337720">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BlackHoleSchrink" ID="{27D084B3-574F-4EFF-8F83-F081D928B97D}" WorkUnitID="{4CA84CF9-49BA-40F4-A34E-5BAA2388FA4D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mus_Score_Start" ID="{3B1BDC85-E39C-4A56-B02A-9285DF263CC0}">
+					<ChildrenList>
+						<Action Name="" ID="{6E9270FD-90AB-4D7E-97FE-D8F4C409A15F}" ShortID="6565616">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="blackHoleShrink" ID="{E53AB499-43B6-497C-9ACC-9775C3C9894A}" WorkUnitID="{6845ADAF-4012-4965-8C7E-36513FBF0D85}"/>
+									<ObjectRef Name="MusicScore" ID="{91D7C56A-3B09-4CCC-82F1-FB12AB6B09F8}" WorkUnitID="{836D5949-112A-41DF-9CCC-CD08E64F726E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mus_Score_Stop" ID="{1B41D086-586A-4715-9523-8CCEA01CA8D0}">
+					<ChildrenList>
+						<Action Name="" ID="{EE5BB9A2-EDFF-4A2B-9784-1739EE8B73D6}" ShortID="322147974">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeInCurve" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicScore" ID="{91D7C56A-3B09-4CCC-82F1-FB12AB6B09F8}" WorkUnitID="{836D5949-112A-41DF-9CCC-CD08E64F726E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mus_IntroStart" ID="{25D458FC-79CA-4C84-A952-D9925A88708F}">
+					<ChildrenList>
+						<Action Name="" ID="{251DB582-4EB7-45F6-A987-EDA6FEABE2B8}" ShortID="244904674">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicIntro" ID="{7EE157F9-7968-44D6-927C-C86FC84848B3}" WorkUnitID="{836D5949-112A-41DF-9CCC-CD08E64F726E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mus_Intro_Stop" ID="{B5DE8803-EE0A-4EE5-8818-244CDC94C272}">
+					<ChildrenList>
+						<Action Name="" ID="{9A691A3A-50C8-4E21-9CFE-07AC917EF91B}" ShortID="212751520">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicIntro" ID="{7EE157F9-7968-44D6-927C-C86FC84848B3}" WorkUnitID="{836D5949-112A-41DF-9CCC-CD08E64F726E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BlackHoleAppear" ID="{BBD93530-7431-41B4-9A31-924C88802611}">
+					<ChildrenList>
+						<Action Name="" ID="{2581F0AE-A5F7-4F2A-BB80-F28DC90F6C74}" ShortID="1062685276">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="blackHoleAppear" ID="{C14AA740-5204-42F1-BC7C-D7C345E1046F}" WorkUnitID="{4CA84CF9-49BA-40F4-A34E-5BAA2388FA4D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

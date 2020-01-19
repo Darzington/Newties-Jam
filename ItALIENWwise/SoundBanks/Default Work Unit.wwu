@@ -13,6 +13,7 @@
 						<ObjectRef Name="Car_Explosion" ID="{57808510-5966-4B0A-92EA-3672E3C1E800}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SpaghettiPops" ID="{C393A771-3BE4-4C7D-9189-2C48BD4D6609}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="MenuStop" ID="{CBC37116-0C80-4DCA-9C35-A7C871AEC6D7}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="blackHoleSchrink" ID="{CA4B053A-0022-4E97-90D4-F2EC6E3C5F2A}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

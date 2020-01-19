@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MafiaMeter : MonoBehaviour
@@ -9,15 +10,15 @@ public class MafiaMeter : MonoBehaviour
 
     public GameObject wwiseObj;
 
-    [SerializeField] private Image marker, meterBase, redZone;
+    [SerializeField] private Image marker, meterBase;
+    [SerializeField] private Text endText;
 
-    private float balance = 0, desiredBalance = 0, maxInEitherDirection, failBalance = 100, balanceChangeTime = 0, adjustmentTime = 0.5f;
-    private Coroutine shifter;
+    private float balance = 0, desiredBalance = 0, maxInEitherDirection, failBalance = 100, balanceChangeTime = 0, adjustmentTime = 1.5f;
     private bool isOver = false;
 
     void Start()
     {
-        float playableWidth = meterBase.gameObject.GetComponent<RectTransform>().rect.width - 2.0f * redZone.gameObject.GetComponent<RectTransform>().rect.width;
+        float playableWidth = meterBase.gameObject.GetComponent<RectTransform>().rect.width;
         maxInEitherDirection = playableWidth / 2.0f;
     }
 
@@ -26,14 +27,14 @@ public class MafiaMeter : MonoBehaviour
         if (!isOver)
         {
             balance = Mathf.Lerp(balance, desiredBalance, (Time.time - balanceChangeTime)/ adjustmentTime);
-            meterMusic.SetValue(wwiseObj, balance);
+            meterMusic.SetValue(wwiseObj, -balance);
             Vector3 markerPosition = marker.transform.localPosition;
             markerPosition.x = (balance / failBalance) * maxInEitherDirection;
             marker.transform.localPosition = markerPosition;
 
             if (HasLostGame())
             {
-                //Lose game
+                StartCoroutine(EndGame());
                 isOver = true;
                 Debug.Log("Ya lose.");
             }
@@ -42,12 +43,27 @@ public class MafiaMeter : MonoBehaviour
 
     private bool HasLostGame()
     {
-        return Mathf.Abs(balance) > failBalance;
+        return Mathf.Abs(balance) >= failBalance;
     }
 
     public void ChangeBalance(int amountToAddOrSubtract)
     {
         desiredBalance += amountToAddOrSubtract;
         balanceChangeTime = Time.timeSinceLevelLoad;
+    }
+
+    private IEnumerator EndGame()
+    {
+        string mafiaEnding = "You relied too much on the mafia to fix potholes, and they became too powerful!";
+        string otherEnding = "Everybody died in space accidents, you're going to jail!";
+
+        endText.text = balance > 50 ? otherEnding : mafiaEnding;
+        endText.enabled = true;
+
+        Time.timeScale = 0;
+
+        yield return new WaitForSecondsRealtime(4.0f);
+
+        SceneManager.LoadScene("LeaderboardIntro");
     }
 }
