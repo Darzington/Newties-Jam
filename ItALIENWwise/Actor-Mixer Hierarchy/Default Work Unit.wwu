@@ -234,6 +234,77 @@
 						<ActiveSource Name="blackHoleAppear" ID="{CE580419-287D-4BE9-8F6A-ADB1F12B2482}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Buttons" ID="{D32C8307-8847-47F1-9968-17A27FE0E354}" ShortID="522306044">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Buttons" ID="{5E92F7E7-39DC-47BF-AF4D-7C98D4DB45C5}" ShortID="324363051">
+							<Language>SFX</Language>
+							<AudioFile>Buttons.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Buttons" ID="{5E92F7E7-39DC-47BF-AF4D-7C98D4DB45C5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ButtonsExit" ID="{7EEADB14-A064-4EDA-91D3-0EE14D4C76DD}" ShortID="232756899">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ButtonsExit" ID="{7D6B536B-8CF5-4B7B-833B-BE78C32D3945}" ShortID="984924824">
+							<Language>SFX</Language>
+							<AudioFile>ButtonsExit.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ButtonsExit" ID="{7D6B536B-8CF5-4B7B-833B-BE78C32D3945}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="StartDeadGame" ID="{FCEC52F2-B703-434B-AE17-FDE53953A3C9}" ShortID="793417670">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="StartDeadGame" ID="{5924AA73-F7BC-462B-976F-3A945BC0938D}" ShortID="17280737">
+							<Language>SFX</Language>
+							<AudioFile>StartDeadGame.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="StartDeadGame" ID="{5924AA73-F7BC-462B-976F-3A945BC0938D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
