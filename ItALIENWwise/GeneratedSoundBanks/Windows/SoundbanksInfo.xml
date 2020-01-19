@@ -23,7 +23,10 @@
 			<IncludedEvents>
 				<Event Id="1884632487" Name="BlackHoleAppear" ObjectPath="\Events\Default Work Unit\BlackHoleAppear" MaxAttenuation="0.000000"/>
 				<Event Id="1277278512" Name="blackHoleSchrink" ObjectPath="\Events\Default Work Unit\blackHoleSchrink" MaxAttenuation="0.000000"/>
+				<Event Id="2646023637" Name="ButtonExit" ObjectPath="\Events\Default Work Unit\ButtonExit"/>
+				<Event Id="203100604" Name="Buttons" ObjectPath="\Events\Default Work Unit\Buttons"/>
 				<Event Id="2069380085" Name="Car_Explosion" ObjectPath="\Events\Default Work Unit\Car_Explosion" MaxAttenuation="0.000000"/>
+				<Event Id="2044049779" Name="Dead" ObjectPath="\Events\Default Work Unit\Dead"/>
 				<Event Id="2381981414" Name="LaserShot" ObjectPath="\Events\Default Work Unit\LaserShot"/>
 				<Event Id="1447920996" Name="MenuStart" ObjectPath="\Events\Default Work Unit\MenuStart"/>
 				<Event Id="1074254744" Name="MenuStop" ObjectPath="\Events\Default Work Unit\MenuStop" MaxAttenuation="0.000000"/>
@@ -37,6 +40,10 @@
 				<Event Id="385134826" Name="SpaghettiPops" ObjectPath="\Events\Default Work Unit\SpaghettiPops" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="17280737" Language="SFX">
+					<ShortName>StartDeadGame.wav</ShortName>
+					<Path>SFX\StartDeadGame_56D34C19.wem</Path>
+				</File>
 				<File Id="76495013" Language="SFX">
 					<ShortName>Mus_SpaceCity_AccInt2.wav</ShortName>
 					<Path>SFX\Mus_SpaceCity_AccInt2_8956FC97.wem</Path>
@@ -76,6 +83,10 @@
 				<File Id="324271420" Language="SFX">
 					<ShortName>Mus_Mafia_Basse.wav</ShortName>
 					<Path>SFX\Mus_Mafia_Basse_8956FC97.wem</Path>
+				</File>
+				<File Id="324363051" Language="SFX">
+					<ShortName>Buttons.wav</ShortName>
+					<Path>SFX\Buttons_56D34C19.wem</Path>
 				</File>
 				<File Id="438215147" Language="SFX">
 					<ShortName>Mus_SpaceCity_Mel1.wav</ShortName>
@@ -132,6 +143,10 @@
 				<File Id="897979933" Language="SFX">
 					<ShortName>Spaghettication.wav</ShortName>
 					<Path>SFX\Spaghettication_8956FC97.wem</Path>
+				</File>
+				<File Id="984924824" Language="SFX">
+					<ShortName>ButtonsExit.wav</ShortName>
+					<Path>SFX\ButtonsExit_56D34C19.wem</Path>
 				</File>
 				<File Id="1067018897" Language="SFX">
 					<ShortName>Mus_Mafia_Percs.wav</ShortName>

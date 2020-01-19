@@ -37,6 +37,9 @@
 								<MusicTrack Name="Mus_Mafia_Mel1" ID="{9797F0F1-1A1F-41E5-9BF4-8258CBE92C2E}" ShortID="582166795">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{59C71B58-78E9-4CC6-A515-2C8A1B9FDE2E}" ShortID="239044044">
 													<ReferenceList>
@@ -113,9 +116,6 @@
 								<MusicTrack Name="Mus_Mafia_Basse" ID="{F568EB87-D2BC-4AD8-B235-C6B7919A299E}" ShortID="697092195">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{67A798C4-D8B7-4BDB-9F19-8F87594A0A0E}" ShortID="133806257">
 													<ReferenceList>
@@ -695,7 +695,6 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
@@ -861,7 +860,6 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
@@ -904,7 +902,6 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
@@ -1053,7 +1050,6 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
@@ -1131,7 +1127,6 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
@@ -1209,7 +1204,6 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
@@ -1519,9 +1513,9 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicSegment Name="Mus_Mafia_Mel2" ID="{ADBB320C-4B15-4A37-9419-3A977D40D778}" ShortID="258068938">
+						<MusicSegment Name="Mus_Mafia_Mel1" ID="{77E53BE0-34DB-41AF-B08F-400C070F17B3}" ShortID="319772114">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="26956.512866016"/>
+								<Property Name="EndPosition" Type="Real64" Value="13043.4782608696"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1532,11 +1526,56 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="Mus_Mafia_PianoGroove2" ID="{03FEB8F2-429D-4A44-9592-ABF9BEF07257}" ShortID="803341750">
+								<MusicTrack Name="Mus_Mafia_Mel1" ID="{FBDAD28E-103F-4FCB-911B-52B23F027344}" ShortID="1050445734">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29A38105-5B49-49DC-969F-39C88BFFC0A0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mus_Mafia_Mel1" ID="{3646A99B-0B32-4E94-A7AF-3DDEF1E66851}" ShortID="48491361">
+											<Language>SFX</Language>
+											<AudioFile>Mus_Mafia_Mel1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="104668417"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{5CDA8873-6612-4EFA-B57C-EC9A82233A0D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{1D3C7784-83D9-4D5C-B238-3A9F4977A07C}">
+											<ClipList>
+												<MusicClip Name="Mus_Mafia_Mel1" ID="{9B746731-EEFA-4DA7-B829-DBAE58C08E9E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13043.4693877551"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Mus_Mafia_Mel1" ID="{3646A99B-0B32-4E94-A7AF-3DDEF1E66851}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="Mus_Mafia_PianoGroove" ID="{E6347171-3C8A-47B7-A44B-F75DBB1F2ADA}" ShortID="988009757">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-18</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1549,16 +1588,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Mus_Mafia_PianoGroove2" ID="{7879BC4D-2ACF-47E3-BCBA-382B9C55CABF}" ShortID="593856534">
+										<AudioFileSource Name="Mus_Mafia_PianoGroove" ID="{01484FBE-02E8-4721-9117-3F2B80320727}" ShortID="536926859">
 											<Language>SFX</Language>
-											<AudioFile>Mus_Mafia_PianoGroove2.wav</AudioFile>
+											<AudioFile>Mus_Mafia_PianoGroove.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="778647489"/>
+												<File ID="580220727"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{53AC7344-E753-489E-B261-11271EA14F49}">
+										<MusicTransition Name="Root" ID="{7CBEC749-5E0B-4317-AE92-C9F0C30DDD22}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -1566,15 +1605,15 @@
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
-										<MusicTrackSequence Name="" ID="{AFB1B810-6BC9-4855-AC97-4FB7ED30C273}">
+										<MusicTrackSequence Name="" ID="{1257FD07-B18B-489C-914A-5B338A8B100A}">
 											<ClipList>
-												<MusicClip Name="Mus_Mafia_PianoGroove2" ID="{2520915C-F1B4-4CE9-912A-E3FF6C2E821F}">
+												<MusicClip Name="Mus_Mafia_PianoGroove" ID="{75175164-107E-4B95-9B6B-31A701342D8C}">
 													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="14782.6077097506"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13043.4693877551"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="PlayAt" Type="Real64" Value="869.565217391304"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="Mus_Mafia_PianoGroove2" ID="{7879BC4D-2ACF-47E3-BCBA-382B9C55CABF}"/>
+													<AudioSourceRef Name="Mus_Mafia_PianoGroove" ID="{01484FBE-02E8-4721-9117-3F2B80320727}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
@@ -1582,15 +1621,15 @@
 								</MusicTrack>
 							</ChildrenList>
 							<CueList>
-								<MusicCue Name="Entry Cue" ID="{27DE68FA-E9F6-40B2-B575-7501437CDB6C}">
+								<MusicCue Name="Entry Cue" ID="{63CAF685-9FDA-4EFF-99A3-4B7B31604296}">
 									<PropertyList>
 										<Property Name="TimeMs" Type="Real64" Value="1739.13043478261"/>
 									</PropertyList>
 								</MusicCue>
-								<MusicCue Name="Exit Cue" ID="{21E65B8C-F580-4024-94BD-D93DBA2E2947}">
+								<MusicCue Name="Exit Cue" ID="{643121E0-AA9B-4436-96FA-0F8C0CA2E7D1}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="15652.1739130435"/>
+										<Property Name="TimeMs" Type="Real64" Value="12173.9130434783"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
@@ -1615,11 +1654,11 @@
 								<Property Name="LoopCount" Type="int16" Value="0"/>
 							</PropertyList>
 							<ChildrenList>
-								<MusicPlaylistItem Name="" ID="{361D7D03-6821-488A-9989-8631C3938072}" ShortID="572191541">
+								<MusicPlaylistItem Name="" ID="{7FDE12CE-B992-47D0-A1B2-1817C080DB15}" ShortID="931813156">
 									<PropertyList>
 										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 									</PropertyList>
-									<SegmentRef Name="Mus_Mafia_Mel2" ID="{ADBB320C-4B15-4A37-9419-3A977D40D778}"/>
+									<SegmentRef Name="Mus_Mafia_Mel1" ID="{77E53BE0-34DB-41AF-B08F-400C070F17B3}"/>
 								</MusicPlaylistItem>
 							</ChildrenList>
 						</MusicPlaylistItem>

@@ -50,12 +50,24 @@
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Buttons" ID="{BBFAF5F9-C96E-4192-B49A-D7421B106E9C}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="blackHoleSchrink" ID="{CA4B053A-0022-4E97-90D4-F2EC6E3C5F2A}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Mus_Intro_Stop" ID="{B5DE8803-EE0A-4EE5-8818-244CDC94C272}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
 							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ButtonExit" ID="{BA5C8DC9-7C1F-416E-ACE0-2D778AA4CEF6}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Dead" ID="{09AA878E-82DC-4ECC-9F65-4FA3288A0CA1}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}"/>
+							<Position X="3" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">

@@ -15,7 +15,10 @@ namespace AK
     {
         static const AkUniqueID BLACKHOLEAPPEAR = 1884632487U;
         static const AkUniqueID BLACKHOLESCHRINK = 1277278512U;
+        static const AkUniqueID BUTTONEXIT = 2646023637U;
+        static const AkUniqueID BUTTONS = 203100604U;
         static const AkUniqueID CAR_EXPLOSION = 2069380085U;
+        static const AkUniqueID DEAD = 2044049779U;
         static const AkUniqueID LASERSHOT = 2381981414U;
         static const AkUniqueID MENUSTART = 1447920996U;
         static const AkUniqueID MENUSTOP = 1074254744U;
