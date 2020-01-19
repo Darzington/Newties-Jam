@@ -240,7 +240,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e58654ed3c722a04d831f6f39faeb33c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e0c6985b66bc7d40a7793488aac1392, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -345,6 +345,12 @@ MonoBehaviour:
     ID: 0
     valueGuid: 00000000000000000000000000000000
   wwiseObj: {fileID: 0}
+  endLevel:
+    ID: 0
+    valueGuid: 00000000000000000000000000000000
+  stopMusic:
+    ID: 0
+    valueGuid: 00000000000000000000000000000000
   marker: {fileID: 3788788317928241724}
   meterBase: {fileID: 3788788318123388753}
   endText: {fileID: 6174863487576349319}
