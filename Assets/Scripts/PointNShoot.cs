@@ -105,7 +105,7 @@ public class PointNShoot : MonoBehaviour
             yield return new WaitForSeconds(Time.deltaTime);
         }
 
-        cooldownTime += 0.1f;
+        cooldownTime += 0.3f;
         isOnCooldown = false;
         cooldownOverlay.gameObject.SetActive(false);
     }

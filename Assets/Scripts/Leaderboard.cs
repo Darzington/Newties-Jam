@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,9 +11,9 @@ public class Leaderboard : MonoBehaviour
 
     void OnEnable()
     {
-        UnityEditor.AssetDatabase.ImportAsset("Assets/Resources/Leaderboard.txt");
-        TextAsset leaderboardRecord = Resources.Load<TextAsset>("Leaderboard");
-        string[] entries = leaderboardRecord.text.Split('\n');
+        StreamReader reader = new StreamReader(Application.persistentDataPath + "//Leaderboard.txt");
+        string[] entries = reader.ReadToEnd().Split('\n');
+        reader.Close();
 
         foreach (string entry in entries)
         {

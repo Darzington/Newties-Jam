@@ -12,7 +12,7 @@ public class BalckHoleSpawner : MonoBehaviour
     List<GameObject> blackHolesList;
     List<int> indexUsed;
 
-    private float timeBetweenSpawns = 5f;
+    private float timeBetweenSpawns = 3f;
 
     void Start()
     {

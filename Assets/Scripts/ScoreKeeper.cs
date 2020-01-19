@@ -21,7 +21,7 @@ public class ScoreKeeper : MonoBehaviour
             NewLeaderboardEntry nle = FindObjectOfType<NewLeaderboardEntry>();
             nle.score = this.score;
         }
-        else if (scene.name == "Leaderboard")
+        else if (scene.name == "Menu")
         {
             Destroy(this.gameObject);
         }

@@ -11,9 +11,7 @@ public class NewLeaderboardEntry : MonoBehaviour
 
     public void AddEntry()
     {
-        TextAsset leaderboardRecord = Resources.Load<TextAsset>("Leaderboard");
-
-        using (FileStream fs = new FileStream("Assets/Resources/Leaderboard.txt", FileMode.Append))
+        using (FileStream fs = new FileStream(Application.persistentDataPath + "//Leaderboard.txt", FileMode.Append))
         {
             using (StreamWriter writer = new StreamWriter(fs))
             {

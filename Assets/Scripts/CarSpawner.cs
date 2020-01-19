@@ -8,21 +8,21 @@ public class CarSpawner : MonoBehaviour
 
     [SerializeField] private GameObject shipPrefab;
     [SerializeField] private Direction dir;
-    [SerializeField] private float moveSpeed, minMoveSpeed = 10.0f, maxMoveSpeed = 30.0f, timeBetweenSpawns, randomSpawnTimeOffset;
+    private float moveSpeed, minMoveSpeed = 30.0f, maxMoveSpeed = 40.0f, timeBetweenSpawns, randomSpawnTimeOffset;
 
     private Vector3 directionVector;
 
     void Start()
     {
-        moveSpeed = 10.0f;
-        SetTimeBetweenSpawns(9.0f);
+        moveSpeed = minMoveSpeed;
+        SetTimeBetweenSpawns(8.0f);
         directionVector = GetDirection();
         StartCoroutine(SpawnCarsForever());
     }
 
     private IEnumerator SpawnCarsForever()
     {
-        SetTimeBetweenSpawns(timeBetweenSpawns - Time.timeSinceLevelLoad * 0.01f);
+        SetTimeBetweenSpawns(timeBetweenSpawns - Time.timeSinceLevelLoad * 0.1f);
         RandomizeMoveSpeed();
 
         GameObject ship = Instantiate(shipPrefab, this.transform);

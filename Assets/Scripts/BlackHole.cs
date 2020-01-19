@@ -5,7 +5,7 @@ using UnityEngine;
 public class BlackHole : MonoBehaviour, IHittable
 {
     private Animator animator;
-    private int blackHoleSize = 0, shootBlackHoleBalanceChange = -20;
+    private int blackHoleSize = 0, shootBlackHoleBalanceChange = -30;
 
     public GameObject wwiseObj;
     public AK.Wwise.Event create;
