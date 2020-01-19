@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour, IHittable
 {
-    private int shootShipBalanceChange = 4, shipSpaghettifyBalanceChange = 7;
+    private int shootShipBalanceChange = 7, shipSpaghettifyBalanceChange = 14;
     [SerializeField] GameObject spaghetti, explosion;
     [SerializeField] GameObject floatingTextPrefab;
 
