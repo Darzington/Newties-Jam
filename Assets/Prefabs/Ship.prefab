@@ -139,6 +139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spaghetti: {fileID: 5905275058371605546, guid: 2e36f6556efd57942bfa717b927aa7ee,
     type: 3}
+  floatingTextPrefab: {fileID: 2320062983508105055, guid: e0adfa725f17edf40a1b66dc9e1d2c55,
+    type: 3}
 --- !u!1001 &3435517623661790564
 PrefabInstance:
   m_ObjectHideFlags: 0
