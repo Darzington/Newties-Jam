@@ -218,6 +218,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 125
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 2e4b4eeca9b12bb419ef9ea765b1b425,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee327476dd04f444f9db18569b311b44, type: 2}
     - target: {fileID: -927199367670048503, guid: 2e4b4eeca9b12bb419ef9ea765b1b425,
         type: 3}
       propertyPath: m_Name
