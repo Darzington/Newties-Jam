@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PointNShoot : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PointNShoot : MonoBehaviour
     [SerializeField] private Texture2D reticule;
     [SerializeField] private GameObject laserPrefab;
     [SerializeField] private Camera cam;
+    [SerializeField] private Image cooldownOverlay, cursor;
 
     private Vector2 mousePosition = Vector2.zero;
     private float cursorIconWidth, cursorIconHeight, cooldownTime = 0.2f;
@@ -21,6 +23,7 @@ public class PointNShoot : MonoBehaviour
         Cursor.visible = false;
         cursorIconHeight = reticule.height;
         cursorIconWidth = reticule.width;
+        cooldownOverlay.gameObject.SetActive(false);
     }
 
     private void OnDisable()
@@ -28,14 +31,11 @@ public class PointNShoot : MonoBehaviour
         Cursor.visible = true;
     }
 
-    void OnGUI()
-    {
-        GUI.DrawTexture(new Rect(mousePosition.x - (cursorIconWidth / 2), mousePosition.y - (cursorIconHeight / 2), cursorIconWidth, cursorIconHeight), reticule);
-    }
-
     void Update()
     {
         mousePosition = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
+        cursor.transform.position = new Vector2(mousePosition.x, Input.mousePosition.y);
+        cooldownOverlay.transform.position = new Vector2(mousePosition.x, Input.mousePosition.y);
 
         if (Input.GetButtonDown("Fire1") && !isOnCooldown)
         {
@@ -63,6 +63,7 @@ public class PointNShoot : MonoBehaviour
 
     private IEnumerator DoCooldown()
     {
+        cooldownOverlay.gameObject.SetActive(true);
         isOnCooldown = true;
 
         float startTime = Time.time;
@@ -73,7 +74,9 @@ public class PointNShoot : MonoBehaviour
             yield return new WaitForSeconds(Time.deltaTime);
         }
 
-        cooldownTime += 0.2f;
+        cooldownTime += 0.1f;
         isOnCooldown = false;
+        cooldownOverlay.gameObject.SetActive(false);
     }
+
 }

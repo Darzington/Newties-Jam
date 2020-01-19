@@ -1423,7 +1423,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Champoins of
+  m_Text: Champions of
 --- !u!222 &2022017129
 CanvasRenderer:
   m_ObjectHideFlags: 0
