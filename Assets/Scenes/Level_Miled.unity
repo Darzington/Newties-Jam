@@ -1214,6 +1214,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5680346637043828625, guid: 49ed407624c4acd439a54cb2904d6c7a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5829021754382954772, guid: 49ed407624c4acd439a54cb2904d6c7a,
         type: 3}
       propertyPath: wwiseObj
@@ -1283,6 +1288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ShootingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950527188099878478, guid: 49ed407624c4acd439a54cb2904d6c7a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49ed407624c4acd439a54cb2904d6c7a, type: 3}
