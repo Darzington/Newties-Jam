@@ -22,10 +22,10 @@ public class BalckHoleSpawner : MonoBehaviour
         StartCoroutine(TimerCountdown());
     }
     
-
     private IEnumerator SpawnBlackHoles()
     {
-       
+        if (indexUsed.Count == blackHolesPos.Length)
+            yield break;
         int index = Random.Range(0, blackHolesPos.Length);
         while(!isValidIndex(index))
         {
