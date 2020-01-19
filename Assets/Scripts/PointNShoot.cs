@@ -13,10 +13,13 @@ public class PointNShoot : MonoBehaviour
     [SerializeField] private GameObject laserPrefab;
     [SerializeField] private Camera cam;
     [SerializeField] private Image cooldownOverlay, cursor;
+    [SerializeField] private GameObject redCross;
 
     private Vector2 mousePosition = Vector2.zero;
     private float cursorIconWidth, cursorIconHeight, cooldownTime = 0.2f;
     private bool isOnCooldown = false;
+
+    private bool inWaitASecCor = false;
 
     void Start()
     {
@@ -24,6 +27,7 @@ public class PointNShoot : MonoBehaviour
         cursorIconHeight = reticule.height;
         cursorIconWidth = reticule.width;
         cooldownOverlay.gameObject.SetActive(false);
+        redCross.SetActive(false);
     }
 
     private void OnDisable()
@@ -36,6 +40,12 @@ public class PointNShoot : MonoBehaviour
         mousePosition = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
         cursor.transform.position = new Vector2(mousePosition.x, Input.mousePosition.y);
         cooldownOverlay.transform.position = new Vector2(mousePosition.x, Input.mousePosition.y);
+        redCross.transform.position = new Vector2(mousePosition.x, Input.mousePosition.y);
+
+        if (Input.GetButtonDown("Fire1") && isOnCooldown && !inWaitASecCor)
+        {
+            StartCoroutine(WaitASec());
+        }        
 
         if (Input.GetButtonDown("Fire1") && !isOnCooldown)
         {
@@ -58,14 +68,20 @@ public class PointNShoot : MonoBehaviour
 
                 StartCoroutine(DoCooldown());
             }
-        }
+        }       
+    }
+
+    private IEnumerator WaitASec()
+    {
+        redCross.SetActive(true);
+        yield return new WaitForSeconds(0.2f);
+        redCross.SetActive(false);
     }
 
     private IEnumerator DoCooldown()
     {
-        cooldownOverlay.gameObject.SetActive(true);
         isOnCooldown = true;
-
+        cooldownOverlay.gameObject.SetActive(true);
         float startTime = Time.time;
         float progress = 0;
         while (progress < 1.0f)
