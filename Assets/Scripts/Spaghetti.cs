@@ -70,7 +70,7 @@ public class Spaghetti : MonoBehaviour
                 progress = 1.0f;
             }
         }
-
+        Debug.Log("DESTROYING THE SPAG");
         Destroy(this.gameObject);
     }
 }
