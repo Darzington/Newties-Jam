@@ -14,18 +14,12 @@ public class BalckHoleSpawner : MonoBehaviour
 
     private float timeBetweenSpawns = 5f;
 
-
     void Start()
     {
         indexUsed = new List<int>();
         blackHolesList = new List<GameObject>();
         StartCoroutine(SpawnBlackHoles());
-        GameEventManager.Instance.OnDecreaseSpawnTime += decreaseTime;
-    }
-
-    void Update()
-    {
-            
+        StartCoroutine(TimerCountdown());
     }
     
 
@@ -39,6 +33,7 @@ public class BalckHoleSpawner : MonoBehaviour
         }
         GameObject instance = Instantiate(blackHole, blackHolesPos[index].position, Quaternion.identity);
         instance.transform.SetParent(blackHolesPos[index]);
+        Debug.Log("BLACK HOLE SPAWNED SOMEWHERE");
         yield return new WaitForSeconds(timeBetweenSpawns);
         StartCoroutine(SpawnBlackHoles());
     }
@@ -54,13 +49,18 @@ public class BalckHoleSpawner : MonoBehaviour
         return true;
     }
 
+    private IEnumerator TimerCountdown()
+    {
+        yield return new WaitForSeconds(10);
+        decreaseTime();
+        if (timeBetweenSpawns == 1)
+            yield break;
+        StartCoroutine(TimerCountdown());
+    }
+
     private void decreaseTime()
     {
         timeBetweenSpawns--;
     }
 
-    void OnDestroy()
-    {
-        GameEventManager.Instance.OnDecreaseSpawnTime -= decreaseTime;
-    }
 }
