@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Leaderboard : MonoBehaviour
 {
     private List<LeaderboardEntry> leaderboard = new List<LeaderboardEntry>();
-    [SerializeField] private Text leaderboardText;
+    [SerializeField] private GameObject leaderboardEntryPrefab;
 
     void Start()
     {
@@ -33,12 +33,24 @@ public class Leaderboard : MonoBehaviour
         leaderboard.Sort(SortByScore);
 
         string leaderboardContents = "";
+        int i = 0;
         foreach (LeaderboardEntry entry in leaderboard)
         {
-            leaderboardContents += entry.ToString() + "\n";
+            ++i;
+            FillLeaderboardEntry(entry, i);
         }
+    }
 
-        leaderboardText.text = leaderboardContents;
+    private void FillLeaderboardEntry(LeaderboardEntry entry, int ranking)
+    {
+        GameObject entryObject = Instantiate(leaderboardEntryPrefab, this.transform);
+        Text number = entryObject.transform.GetChild(0).GetComponent<Text>();
+        Text name = entryObject.transform.GetChild(1).GetComponent<Text>();
+        Text score = entryObject.transform.GetChild(3).GetComponent<Text>();
+
+        number.text = ranking + ".";
+        name.text = entry.name;
+        score.text = entry.score + "";
     }
 
     private class LeaderboardEntry
@@ -50,11 +62,6 @@ public class Leaderboard : MonoBehaviour
         {
             this.name = name;
             this.score = score;
-        }
-
-        public override string ToString()
-        {
-            return name + "  Score: " + score;
         }
     }
 
