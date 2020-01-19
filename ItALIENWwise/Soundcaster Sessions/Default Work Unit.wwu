@@ -73,7 +73,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Meter" ID="{93B00E26-50D9-4D25-9113-E71276258CBB}"/>
-							<Value>-100</Value>
+							<Value>84</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

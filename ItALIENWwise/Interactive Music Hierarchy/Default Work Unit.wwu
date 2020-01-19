@@ -8,7 +8,7 @@
 						<Property Name="Tempo" Type="Real64" Value="138"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-4</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -1667,6 +1667,11 @@
 				<MusicPlaylistContainer Name="MusicIntro" ID="{7EE157F9-7968-44D6-927C-C86FC84848B3}" ShortID="417396933">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="138"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1820,6 +1825,13 @@
 					</Playlist>
 				</MusicPlaylistContainer>
 				<MusicSegment Name="blackHoleAppear" ID="{A3376BEA-E7B1-44E9-ABD8-D95FD9238008}" ShortID="480867038">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
@@ -1932,6 +1944,13 @@
 					</CueList>
 				</MusicSegment>
 				<MusicSegment Name="Desintegration" ID="{1B334AFA-C8A2-4C34-8505-8D7D2819ED95}" ShortID="942212072">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
@@ -1988,6 +2007,13 @@
 					</CueList>
 				</MusicSegment>
 				<MusicSegment Name="Spaghettication" ID="{03A53D44-3377-47A6-B634-06BE200BD662}" ShortID="701774179">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A940C65-B9B7-4CC0-9619-70710136968D}"/>
