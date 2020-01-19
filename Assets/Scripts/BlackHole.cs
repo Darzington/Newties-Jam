@@ -49,11 +49,6 @@ public class BlackHole : MonoBehaviour, IHittable
     {
         destroy.Post(wwiseObj);
         OnDestroy();
-        MafiaMeter meter = FindObjectOfType<MafiaMeter>();
-        if (meter != null)
-        {
-            meter.ChangeBalance(shootBlackHoleBalanceChange);
-        }
         Destroy(this.gameObject);
         // APPLY SOME COOL ANIMATION OR PARTICLE FX HERE !
     }
@@ -78,6 +73,11 @@ public class BlackHole : MonoBehaviour, IHittable
 
     public void Hit()
     {
+        MafiaMeter meter = FindObjectOfType<MafiaMeter>();
+        if (meter != null)
+        {
+            meter.ChangeBalance(shootBlackHoleBalanceChange);
+        }
         switch (blackHoleSize)
         {
             case 0:
@@ -93,6 +93,6 @@ public class BlackHole : MonoBehaviour, IHittable
                 Debug.LogError("ERROR IN THE BLACK HOLE SWITCH CASE");
                 break;
         }
-        //destroyBlackHole();
+        // AT THE END OF THE ANIMATION, destroyBlackHole IS CALLED
     }
 }

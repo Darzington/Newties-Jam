@@ -6,7 +6,6 @@ public class Ship : MonoBehaviour, IHittable
 {
     private int shootShipBalanceChange = 7, shipSpaghettifyBalanceChange = 14;
     [SerializeField] GameObject spaghetti, explosion;
-    [SerializeField] GameObject floatingTextPrefab;
 
     public GameObject wwiseObj;
     public AK.Wwise.Event explosionEventBoom;
@@ -22,13 +21,9 @@ public class Ship : MonoBehaviour, IHittable
     {
         DestroyAndChangeBalance(shootShipBalanceChange);
         GameObject splode = Instantiate(explosion, transform.position, Quaternion.identity);
+
         explosionEventBoom.Post(wwiseObj);
 
-
-        if (floatingTextPrefab != null)
-        {
-            Instantiate(floatingTextPrefab, transform.position, Quaternion.identity, transform);
-        }
     }
 
     public void Spaghettify()
