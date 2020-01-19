@@ -40,9 +40,11 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="zk5I7KHEO0SIpEsCl3+ZkA=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="Interactive Music\x64_{017F8C9A-BA54-4B86-BECD-337E1FE72B36} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP9OjcD0Kz0NAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{03A53D44-3377-47A6-B634-06BE200BD662} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAA2GFAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{0DFFFA11-7CD4-4359-9E9B-1CAEDA6D34FA} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP9OjcD0Kz0NAAAAAAAAA8D8AAAAAAAAAAAAAAAAAADlA"/>
 				<Property Name="Interactive Music\x64_{15346361-88D7-45D7-BF2F-BAA145301BD2} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPw9hAQjuTUdAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{156CD421-B6E1-4309-84B2-1A90D30A7D40} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP8duBipkaUpAAAAAAAAA8D8AAAAAAAAAAAAAAAAAgE1A"/>
+				<Property Name="Interactive Music\x64_{1B334AFA-C8A2-4C34-8505-8D7D2819ED95} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAA2GFAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{32B07181-59EB-46B2-AFCC-EB0F179F174F} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPw9hAQjuTUdAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{342B1F68-EF93-4AA2-944D-BEFD05583D6C} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP8duBipkaUpAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{3F85759A-7894-4A44-856C-FBEEB7DFDA1C} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP8duBipkaUpAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
@@ -51,6 +53,7 @@
 				<Property Name="Interactive Music\x64_{83CAA3D1-1374-401A-B7CA-D9FECB16A6FD} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP7YvlvxiaUpAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{9561EFE2-30A3-4783-ADED-BC67FABB7D4A} - SegmentEditorZoomInfo" Type="string" Value="VVVVVVVV5T8AAAAAAADwP8duBipkaUpAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAElA"/>
 				<Property Name="Interactive Music\x64_{9D581235-6EC0-44D5-ABA2-A12A2EE16676} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPw9hAQjuTUdAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{A3376BEA-E7B1-44E9-ABD8-D95FD9238008} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAA2GFAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{ADBB320C-4B15-4A37-9419-3A977D40D778} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP5FmG5JHjzlAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{CB1A0120-279F-446F-8238-282702660845} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAA2GFAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{E2F3207E-F2FD-4776-9163-92A17983CFCF} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPySZNllnRkVAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
@@ -166,7 +169,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_7_2" Type="string" Value="KPZ/y10/cUq1x38Yqyzzpw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_2" Type="string" Value=""/>
-				<Property Name="RTPC\GameParameterSimValue\{93B00E26-50D9-4D25-9113-E71276258CBB}" Type="Real64" Value="-100"/>
+				<Property Name="RTPC\GameParameterSimValue\{93B00E26-50D9-4D25-9113-E71276258CBB}" Type="Real64" Value="84"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="MUyynetJxEu21L67SRMZow=="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">

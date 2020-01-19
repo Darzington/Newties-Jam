@@ -4,19 +4,26 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour, IHittable
 {
-    private int shootShipBalanceChange = 4, shipSpaghettifyBalanceChange = 7;
-
+    private int shootShipBalanceChange = 7, shipSpaghettifyBalanceChange = 14;
     [SerializeField] GameObject spaghetti, explosion;
+
+    public GameObject wwiseObj;
+    public AK.Wwise.Event explosionEventBoom;
 
     private void Start()
     {
         transform.GetChild(Random.Range(0, transform.childCount)).gameObject.SetActive(true);
+
+        wwiseObj = FindObjectOfType<AkInitializer>().gameObject;
     }
 
     public void Hit()
     {
         DestroyAndChangeBalance(shootShipBalanceChange);
         GameObject splode = Instantiate(explosion, transform.position, Quaternion.identity);
+
+        explosionEventBoom.Post(wwiseObj);
+
     }
 
     public void Spaghettify()

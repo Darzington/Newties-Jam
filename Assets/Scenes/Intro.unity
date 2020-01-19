@@ -152,9 +152,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopMusic:
+    ID: 970665416
+    valueGuid: 0388deb50aeee54e8818244cdc94c272
+  startButton:
     ID: 0
     valueGuid: 00000000000000000000000000000000
-  wwiseObj: {fileID: 0}
+  exitButton:
+    ID: 0
+    valueGuid: 00000000000000000000000000000000
+  wwiseObj: {fileID: 978715947}
 --- !u!4 &71810846
 Transform:
   m_ObjectHideFlags: 0
@@ -616,6 +622,8 @@ GameObject:
   m_Component:
   - component: {fileID: 978715949}
   - component: {fileID: 978715948}
+  - component: {fileID: 978715951}
+  - component: {fileID: 978715950}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -665,6 +673,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &978715950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978715947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29ca32cfae99834296c5914689a6289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  bankName: New_SoundBank
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  valueGuid: ce4e48eca1c43b4488a44b02977f9990
+--- !u!114 &978715951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978715947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289f70bb5fb7f4c4dab2deee64bfaeaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music:
+    ID: -1219404425
+    valueGuid: fc58d425ca79844ca952d9925a88708f
+  wwiseObj: {fileID: 978715947}
 --- !u!1001 &998245334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -677,6 +721,11 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 802242908}
+    - target: {fileID: 5829021754382954772, guid: 49ed407624c4acd439a54cb2904d6c7a,
+        type: 3}
+      propertyPath: wwiseObj
+      value: 
+      objectReference: {fileID: 978715947}
     - target: {fileID: 5829021754382954773, guid: 49ed407624c4acd439a54cb2904d6c7a,
         type: 3}
       propertyPath: m_LocalPosition.x

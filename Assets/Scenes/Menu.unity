@@ -1061,6 +1061,12 @@ MonoBehaviour:
   stopMusic:
     ID: 1074254744
     valueGuid: 1671c3cb800cca4d9c35a7c871aec6d7
+  startButton:
+    ID: 203100604
+    valueGuid: f9f5fabb6ec99241b49ad7421b106e9c
+  exitButton:
+    ID: -1648943659
+    valueGuid: c98d5cba1f7c6e41ace02d778aa4cef6
   wwiseObj: {fileID: 971269331}
 --- !u!4 &1328299644
 Transform:

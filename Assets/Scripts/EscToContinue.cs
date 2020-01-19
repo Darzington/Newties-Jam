@@ -16,7 +16,7 @@ public class EscToContinue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("Level");
+            FindObjectOfType<ButtonFuctions>().LoadLevel();
         }
     }
 }

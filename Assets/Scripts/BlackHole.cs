@@ -6,13 +6,21 @@ public class BlackHole : MonoBehaviour, IHittable
 {
     private Animator animator;
     private int blackHoleSize = 0, shootBlackHoleBalanceChange = -20;
-    
+
+    public GameObject wwiseObj;
+    public AK.Wwise.Event create;
+    public AK.Wwise.Event destroy;
+    public AK.Wwise.Event spaghettify;
+
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         GameEventManager.Instance.OnBlackHoleSizeUp += increaseBlackHole;
         GameEventManager.Instance.OnBlackHoleDestroy += destroyBlackHole;
+
+        wwiseObj = FindObjectOfType<AkInitializer>().gameObject;
+        create.Post(wwiseObj);
     }
 
     private void increaseBlackHole()
@@ -39,6 +47,7 @@ public class BlackHole : MonoBehaviour, IHittable
 
     private void destroyBlackHole() // CALLED BY THE SHRINK ANIMATION EVENT
     {
+        destroy.Post(wwiseObj);
         OnDestroy();
         Destroy(this.gameObject);
         // APPLY SOME COOL ANIMATION OR PARTICLE FX HERE !
@@ -51,6 +60,7 @@ public class BlackHole : MonoBehaviour, IHittable
         {
             ship.Spaghettify();
             increaseBlackHole();
+            spaghettify.Post(wwiseObj);
         }
     }
 
