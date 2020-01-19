@@ -5,15 +5,23 @@
 			<ChildrenList>
 				<SoundBank Name="New_SoundBank" ID="{EC484ECE-C4A1-443B-88A4-4B02977F9990}">
 					<ObjectInclusionList>
+						<ObjectRef Name="ButtonExit" ID="{BA5C8DC9-7C1F-416E-ACE0-2D778AA4CEF6}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Buttons" ID="{BBFAF5F9-C96E-4192-B49A-D7421B106E9C}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="BlackHoleAppear" ID="{BBD93530-7431-41B4-9A31-924C88802611}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Mus_Game_Start" ID="{34F4167D-D328-4213-A3C3-F88A74075D8B}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="MenuStart" ID="{D872DB79-39EF-4431-B472-D9EE78AA1F4E}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="LaserShot" ID="{5D190101-CB91-4576-9DDD-9ABC513A8591}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Mus_Game_Stop" ID="{377F9B59-2DFF-45C8-B21D-D04671C6B1C0}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Mus_Score_Stop" ID="{1B41D086-586A-4715-9523-8CCEA01CA8D0}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Spaghettication" ID="{452EFEAE-8791-486E-B394-6C0C3AFCC4B6}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Mus_Score_Start" ID="{3B1BDC85-E39C-4A56-B02A-9285DF263CC0}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Car_Explosion" ID="{57808510-5966-4B0A-92EA-3672E3C1E800}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SpaghettiPops" ID="{C393A771-3BE4-4C7D-9189-2C48BD4D6609}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Mus_IntroStart" ID="{25D458FC-79CA-4C84-A952-D9925A88708F}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="MenuStop" ID="{CBC37116-0C80-4DCA-9C35-A7C871AEC6D7}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="blackHoleSchrink" ID="{CA4B053A-0022-4E97-90D4-F2EC6E3C5F2A}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Dead" ID="{09AA878E-82DC-4ECC-9F65-4FA3288A0CA1}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Mus_Intro_Stop" ID="{B5DE8803-EE0A-4EE5-8818-244CDC94C272}" WorkUnitID="{A3B5DAFF-8E80-4A78-AB2A-81CF787BC5B9}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

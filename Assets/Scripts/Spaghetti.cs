@@ -36,11 +36,11 @@ public class Spaghetti : MonoBehaviour
 
     private void LaunchSpaghetti()
     {
-        int launchStrength = 10;
+        int launchStrength = 15;
         foreach (Rigidbody rb in spagRBs)
         {
             rb.AddForce(new Vector3(Random.Range(-launchStrength, launchStrength), 
-                Random.Range(-launchStrength, launchStrength), Random.Range(-launchStrength, launchStrength)), ForceMode.VelocityChange);
+                launchStrength/5.0f, Random.Range(-launchStrength, launchStrength)), ForceMode.VelocityChange);
         }
     }
 
@@ -52,7 +52,7 @@ public class Spaghetti : MonoBehaviour
     private IEnumerator SelfDestruct()
     {
         yield return new WaitForSeconds(0.1f);
-        float startTime = Time.time, floatTime = 4.0f;
+        float startTime = Time.time, floatTime = 2.0f;
         float progress = 0.0f;
         while (progress < 1.0f)
         {
@@ -61,7 +61,7 @@ public class Spaghetti : MonoBehaviour
             {
                 foreach (Rigidbody rb in spagRBs)
                 {
-                    rb.AddForce((closestHole.transform.position - rb.transform.position) * progress * 5, ForceMode.Acceleration);
+                    rb.AddForce((closestHole.transform.position - rb.transform.position) * progress * 6, ForceMode.Acceleration);
                 }
             }
             else

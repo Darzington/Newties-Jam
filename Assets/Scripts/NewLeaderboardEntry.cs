@@ -22,6 +22,12 @@ public class NewLeaderboardEntry : MonoBehaviour
                     name.text = "No name";
                 }
 
+                ScoreKeeper sk = FindObjectOfType<ScoreKeeper>();
+                if (sk != null)
+                {
+                    sk.name = name.text.Trim();
+                }
+
                 writer.Write("\n" + name.text.Trim() + " " + score);
                 writer.Close();
                 writer.Dispose();

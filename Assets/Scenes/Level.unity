@@ -121,18 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &62314813 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3788788317376753191, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-    type: 3}
-  m_PrefabInstance: {fileID: 587172578}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &79933203
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,18 +429,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ceb7367bae02bd4f90ccd7621a639c5, type: 3}
---- !u!114 &381369706 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3788788317928241724, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-    type: 3}
-  m_PrefabInstance: {fileID: 587172578}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &587172578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -520,121 +496,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MafiaMeter
       objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388752, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388752, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: redZone
-      value: 
-      objectReference: {fileID: 62314813}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterBase
-      value: 
-      objectReference: {fileID: 905373902}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: marker
-      value: 
-      objectReference: {fileID: 381369706}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.ID
-      value: -1888108652
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[0]
-      value: 38
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[1]
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[2]
-      value: 176
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[3]
-      value: 147
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[4]
-      value: 217
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[5]
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[6]
-      value: 37
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[7]
-      value: 77
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[8]
-      value: 145
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[9]
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[10]
-      value: 231
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[11]
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[12]
-      value: 118
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[13]
-      value: 37
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[14]
-      value: 140
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: meterMusic.valueGuid.Array.data[15]
-      value: 187
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388755, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: wwiseObj
-      value: 
-      objectReference: {fileID: 1600738177}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efc0a6eab60ccd24a8226d58f97a4b18, type: 3}
 --- !u!1 &745292833
@@ -781,18 +642,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &905373902 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3788788318123388753, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-    type: 3}
-  m_PrefabInstance: {fileID: 587172578}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1085596917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,7 +889,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 567
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0

@@ -105,7 +105,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -199,6 +199,48 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="blackHoleAppear" ID="{C14AA740-5204-42F1-BC7C-D7C345E1046F}" WorkUnitID="{4CA84CF9-49BA-40F4-A34E-5BAA2388FA4D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Buttons" ID="{BBFAF5F9-C96E-4192-B49A-D7421B106E9C}">
+					<ChildrenList>
+						<Action Name="" ID="{05A4025A-818F-4E2C-B5DB-6C5079416B81}" ShortID="432863203">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Buttons" ID="{D32C8307-8847-47F1-9968-17A27FE0E354}" WorkUnitID="{6845ADAF-4012-4965-8C7E-36513FBF0D85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dead" ID="{09AA878E-82DC-4ECC-9F65-4FA3288A0CA1}">
+					<ChildrenList>
+						<Action Name="" ID="{FB032D1F-807A-4B18-B839-60DFABD38B51}" ShortID="471704886">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StartDeadGame" ID="{FCEC52F2-B703-434B-AE17-FDE53953A3C9}" WorkUnitID="{6845ADAF-4012-4965-8C7E-36513FBF0D85}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ButtonExit" ID="{BA5C8DC9-7C1F-416E-ACE0-2D778AA4CEF6}">
+					<ChildrenList>
+						<Action Name="" ID="{D69402BB-D76B-496C-B522-E5BC82CAE0D3}" ShortID="209888492">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ButtonsExit" ID="{7EEADB14-A064-4EDA-91D3-0EE14D4C76DD}" WorkUnitID="{6845ADAF-4012-4965-8C7E-36513FBF0D85}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

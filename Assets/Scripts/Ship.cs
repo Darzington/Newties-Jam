@@ -5,16 +5,24 @@ using UnityEngine;
 public class Ship : MonoBehaviour, IHittable
 {
     private int shootShipBalanceChange = 4, shipSpaghettifyBalanceChange = 7;
-    [SerializeField] GameObject spaghetti;
+
+    [SerializeField] GameObject spaghetti, explosion;
+    [SerializeField] GameObject floatingTextPrefab;
 
     private void Start()
     {
-        transform.GetChild(Random.Range(0, 2)).gameObject.SetActive(false);
+        transform.GetChild(Random.Range(0, transform.childCount)).gameObject.SetActive(true);
     }
 
     public void Hit()
     {
         DestroyAndChangeBalance(shootShipBalanceChange);
+        GameObject splode = Instantiate(explosion, transform.position, Quaternion.identity);
+
+        if (floatingTextPrefab != null)
+        {
+            Instantiate(floatingTextPrefab, transform.position, Quaternion.identity, transform);
+        }
     }
 
     public void Spaghettify()

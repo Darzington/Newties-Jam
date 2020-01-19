@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class Leaderboard : MonoBehaviour
 {
     private List<LeaderboardEntry> leaderboard = new List<LeaderboardEntry>();
-    [SerializeField] private Text leaderboardText;
+    [SerializeField] private GameObject leaderboardEntryPrefab;
 
-    void Start()
+    void OnEnable()
     {
         UnityEditor.AssetDatabase.ImportAsset("Assets/Resources/Leaderboard.txt");
         TextAsset leaderboardRecord = Resources.Load<TextAsset>("Leaderboard");
@@ -30,15 +30,48 @@ public class Leaderboard : MonoBehaviour
 
     private void FillLeaderboardText()
     {
+        ScoreKeeper sk = FindObjectOfType<ScoreKeeper>();
+
         leaderboard.Sort(SortByScore);
 
         string leaderboardContents = "";
+        int i = 0;
         foreach (LeaderboardEntry entry in leaderboard)
         {
-            leaderboardContents += entry.ToString() + "\n";
+            ++i;
+            bool isNew = false;
+            if (sk != null)
+            {
+                isNew = entry.name.Equals(sk.name) && entry.score == sk.score;
+            }
+            FillLeaderboardEntry(entry, i, isNew);
         }
+    }
 
-        leaderboardText.text = leaderboardContents;
+    private void FillLeaderboardEntry(LeaderboardEntry entry, int ranking, bool isNew)
+    {
+        GameObject entryObject = Instantiate(leaderboardEntryPrefab, this.transform);
+        Text number = entryObject.transform.GetChild(0).GetComponent<Text>();
+        Text name = entryObject.transform.GetChild(1).GetComponent<Text>();
+        Text colon = entryObject.transform.GetChild(2).GetComponent<Text>();
+        Text score = entryObject.transform.GetChild(3).GetComponent<Text>();
+
+        number.text = ranking + ".";
+        name.text = entry.name;
+        score.text = entry.score + "";
+
+        if (isNew)
+        {
+            number.fontStyle = FontStyle.BoldAndItalic;
+            colon.fontStyle = FontStyle.BoldAndItalic;
+            name.fontStyle = FontStyle.BoldAndItalic;
+            score.fontStyle = FontStyle.BoldAndItalic;
+
+            number.fontSize = number.fontSize + 10;
+            colon.fontSize = colon.fontSize + 10;
+            name.fontSize = name.fontSize + 10;
+            score.fontSize = score.fontSize + 10;
+        }
     }
 
     private class LeaderboardEntry
@@ -50,11 +83,6 @@ public class Leaderboard : MonoBehaviour
         {
             this.name = name;
             this.score = score;
-        }
-
-        public override string ToString()
-        {
-            return name + "  Score: " + score;
         }
     }
 

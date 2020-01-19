@@ -500,7 +500,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "In ancient times, the streets of \nMontreal were rife with potholes. \nSome
-    things never change.\r\n\r\nThe year is 2400, and the advanced \nitALIEN species
+    things never change.\r\n\r\nThe year is 4073, and the advanced \nitALIEN species
     rules the streets. \nThe Risotto crime family controls \neverything. These ruthless
     itALIENs \nbecome gleeful when the black holes \non their roads spaghettify motorists,\nbut
     become wrathful when their black \nholes are destroyed. \r\n\r\nYou, a lone hero,
@@ -508,7 +508,7 @@ MonoBehaviour:
     or allowing some victims \nto be spaghettified in the black holes to \nappease
     the mafia. However, your gun \nis faulty and will reload more slowly as \nyou
     use it! You must strategically pick \nyour target in order to maintain balance
-    \nas long as possible along Montreal\u2019s \nmain thoroughfare, The Leche Way,
+    \nas long as possible along Montreal\u2019s \nmain thoroughfare, The Latte Way,
     \nbut remember that black holes, like\nthe potholes of old, always return.\r\n"
 --- !u!222 &846580706
 CanvasRenderer:
