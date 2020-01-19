@@ -19,8 +19,11 @@ public class ScoreTracker : MonoBehaviour
 
     void Update()
     {
-        score += scoreGainPerDeltaTime;
-        scoreText.text = scoreTextBeginning + score;
+        if (Time.timeScale > 0.5f)
+        {
+            score += scoreGainPerDeltaTime;
+            scoreText.text = scoreTextBeginning + score;
+        }
     }
 
     public void ChangeScore(int scoreToAddOrSubtract)

@@ -18,6 +18,12 @@ public class ButtonFuctions : MonoBehaviour
         SceneManager.LoadScene("Leaderboard");
     }
 
+    public void LoadIntro()
+    {
+        SceneManager.LoadScene("Intro");
+        stopMusic.Post(wwiseObj);
+    }
+
     public void LoadLevel()
     {
         SceneManager.LoadScene("Level");
