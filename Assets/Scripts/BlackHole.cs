@@ -45,7 +45,7 @@ public class BlackHole : MonoBehaviour, IHittable
         }
     }
 
-    private void destroyBlackHole()
+    private void destroyBlackHole() // CALLED BY THE SHRINK ANIMATION EVENT
     {
         destroy.Post(wwiseObj);
         OnDestroy();
@@ -78,6 +78,21 @@ public class BlackHole : MonoBehaviour, IHittable
 
     public void Hit()
     {
-        destroyBlackHole();
+        switch (blackHoleSize)
+        {
+            case 0:
+                animator.SetTrigger("shrink");
+                break;
+            case 1:
+                animator.SetTrigger("shrink1");
+                break;
+            case 2:
+                animator.SetTrigger("shrink2");
+                break;
+            default:
+                Debug.LogError("ERROR IN THE BLACK HOLE SWITCH CASE");
+                break;
+        }
+        //destroyBlackHole();
     }
 }
