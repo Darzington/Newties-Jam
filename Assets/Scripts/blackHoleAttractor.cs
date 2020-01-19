@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class blackHoleAttractor : MonoBehaviour {
 
-    private float speed = 10.0f;
+    public float speed = 10.0f;
 
     // Total distance between the markers.
     private List<AttractedObject> collidedObjects = new List<AttractedObject>();
 
     private Transform blackHoleTransform;
+
+    // Mesh deforming
+    Mesh deformingMesh;
+    Vector3[] originalVertices, displacedVertices;
+    Vector3[] vertexVelocities;
+
+    public float force = 10f;
+
+    MeshDeformer deformer;
 
     // Use this for initialization
     void Start ()
@@ -35,22 +44,46 @@ public class blackHoleAttractor : MonoBehaviour {
 
             // Set our position as a fraction of the distance between the markers.
             obj.satellites.transform.position = Vector3.Lerp(obj.initialPos, blackHoleTransform.position, fractionOfJourney);
+
+            Ray inputRay = this.blackHoleTransform.position;
+            Raycast hit;
+
+            if (Physics.Raycast(inputRay, out hit))
+            {
+                MeshDeformer deformer = obj.satellites.GetComponentInParent<MeshDeformer>();
+
+                if (deformer)
+                {
+                    Vector3 point = obj.point;
+                    deformer.AddDeformingForce(point, force);
+                }
+            }
+
         }
      
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("SHIP IS HERE");
-        //Ship shipComponent = other.gameObject.GetComponent<Ship>();
-        //if (shipComponent != null)
-        if (other.gameObject.GetComponent<Ship>() != null)
+        if (other.gameObject.GetComponentInParent<Ship>() != null)
         {
+            this.deformingMesh = other.gameObject.GetComponentInParent<MeshFilter>().mesh;
+            this.originalVertices = this.deformingMesh.vertices;
+            this.displacedVertices = new Vector3[this.originalVertices.Length];
+
+            for (int i = 0; i < originalVertices.Length; i++)
+            {
+                displacedVertices[i] = originalVertices[i];
+            }
+
+            this.vertexVelocities = new Vector3[this.originalVertices.Length];
+
             Debug.Log("SHIP IS HERE");
-            // Change the cube color to green.
             this.collidedObjects.Add(new AttractedObject(Time.time, Vector3.Distance(other.transform.position, blackHoleTransform.position), other.transform.position, other.gameObject));
         }
     }
+
+    
 
 }
 
