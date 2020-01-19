@@ -11,7 +11,7 @@ public class MafiaMeter : MonoBehaviour
 
     [SerializeField] private Image marker, meterBase;
 
-    private float balance = 0, desiredBalance = 0, maxInEitherDirection, failBalance = 100, balanceChangeTime = 0, adjustmentTime = 0.5f;
+    private float balance = 0, desiredBalance = 0, maxInEitherDirection, failBalance = 100, balanceChangeTime = 0, adjustmentTime = 1.5f;
     private bool isOver = false;
 
     void Start()
