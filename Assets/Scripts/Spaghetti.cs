@@ -63,14 +63,13 @@ public class Spaghetti : MonoBehaviour
                 {
                     rb.AddForce((closestHole.transform.position - rb.transform.position) * progress * 5, ForceMode.Acceleration);
                 }
-                yield return new WaitForSeconds(Time.deltaTime);
             }
             else
             {
-                progress = 1.0f;
+                FindNearestBlackHole();
             }
+            yield return new WaitForSeconds(Time.deltaTime);
         }
-        Debug.Log("DESTROYING THE SPAG");
         Destroy(this.gameObject);
     }
 }
