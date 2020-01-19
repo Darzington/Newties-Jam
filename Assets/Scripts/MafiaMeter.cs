@@ -55,7 +55,7 @@ public class MafiaMeter : MonoBehaviour
     private IEnumerator EndGame()
     {
         string leftEnding = "You destroyed too many black holes, the Risotto family has put out a hit on you!";
-        string rightEnding = "You let the black holes spaghettify too many victions, you're going to jail!";
+        string rightEnding = "You let the black holes spaghettify too many victims, you're going to jail!";
 
         endText.text = balance > 50 ? rightEnding : leftEnding;
         endText.enabled = true;

@@ -496,31 +496,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MafiaMeter
       objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388752, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388752, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388752, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 130
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388752, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788788318123388752, guid: efc0a6eab60ccd24a8226d58f97a4b18,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 200
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efc0a6eab60ccd24a8226d58f97a4b18, type: 3}
 --- !u!1 &745292833

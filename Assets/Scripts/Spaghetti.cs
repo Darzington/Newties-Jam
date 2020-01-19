@@ -36,7 +36,7 @@ public class Spaghetti : MonoBehaviour
 
     private void LaunchSpaghetti()
     {
-        int launchStrength = 10;
+        int launchStrength = 8;
         foreach (Rigidbody rb in spagRBs)
         {
             rb.AddForce(new Vector3(Random.Range(-launchStrength, launchStrength), 
