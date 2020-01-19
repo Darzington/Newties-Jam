@@ -6,7 +6,6 @@ public class Ship : MonoBehaviour, IHittable
 {
     private int shootShipBalanceChange = 4, shipSpaghettifyBalanceChange = 7;
     [SerializeField] GameObject spaghetti;
-    [SerializeField] GameObject floatingTextPrefab;
 
     private void Start()
     {
@@ -16,10 +15,6 @@ public class Ship : MonoBehaviour, IHittable
     public void Hit()
     {
         DestroyAndChangeBalance(shootShipBalanceChange);
-        if(floatingTextPrefab != null)
-        {
-            Instantiate(floatingTextPrefab, transform.position, Quaternion.identity, transform);
-        }
     }
 
     public void Spaghettify()

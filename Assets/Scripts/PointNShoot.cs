@@ -91,7 +91,6 @@ public class PointNShoot : MonoBehaviour
 
     private IEnumerator DoCooldown()
     {
-        Debug.Log("AM I HERER !!!!");
         isOnCooldown = true;
         cooldownOverlay.gameObject.SetActive(true);
         float startTime = Time.time;
