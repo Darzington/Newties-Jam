@@ -10,13 +10,13 @@ public class Ship : MonoBehaviour, IHittable
 
     private void Start()
     {
-        transform.GetChild(Random.Range(0, 2)).gameObject.SetActive(false);
+        transform.GetChild(Random.Range(0, transform.childCount)).gameObject.SetActive(true);
     }
 
     public void Hit()
     {
         DestroyAndChangeBalance(shootShipBalanceChange);
-        Instantiate(explosion, transform.position, Quaternion.identity);
+        GameObject splode = Instantiate(explosion, transform.position, Quaternion.identity);
 
         if (floatingTextPrefab != null)
         {
