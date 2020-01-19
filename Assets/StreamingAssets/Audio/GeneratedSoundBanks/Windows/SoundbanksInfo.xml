@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4072029455" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\New_SoundBank</ObjectPath>
+			<ShortName>New_SoundBank</ShortName>
+			<Path>New_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1884632487" Name="BlackHoleAppear" ObjectPath="\Events\Default Work Unit\BlackHoleAppear" MaxAttenuation="0.000000"/>
+				<Event Id="1277278512" Name="blackHoleSchrink" ObjectPath="\Events\Default Work Unit\blackHoleSchrink" MaxAttenuation="0.000000"/>
+				<Event Id="2646023637" Name="ButtonExit" ObjectPath="\Events\Default Work Unit\ButtonExit"/>
+				<Event Id="203100604" Name="Buttons" ObjectPath="\Events\Default Work Unit\Buttons"/>
+				<Event Id="2069380085" Name="Car_Explosion" ObjectPath="\Events\Default Work Unit\Car_Explosion" MaxAttenuation="0.000000"/>
+				<Event Id="2044049779" Name="Dead" ObjectPath="\Events\Default Work Unit\Dead"/>
+				<Event Id="2381981414" Name="LaserShot" ObjectPath="\Events\Default Work Unit\LaserShot"/>
+				<Event Id="1447920996" Name="MenuStart" ObjectPath="\Events\Default Work Unit\MenuStart"/>
+				<Event Id="1074254744" Name="MenuStop" ObjectPath="\Events\Default Work Unit\MenuStop" MaxAttenuation="0.000000"/>
+				<Event Id="1569836982" Name="Mus_Game_Start" ObjectPath="\Events\Default Work Unit\Mus_Game_Start"/>
+				<Event Id="481313334" Name="Mus_Game_Stop" ObjectPath="\Events\Default Work Unit\Mus_Game_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="970665416" Name="Mus_Intro_Stop" ObjectPath="\Events\Default Work Unit\Mus_Intro_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="3075562871" Name="Mus_IntroStart" ObjectPath="\Events\Default Work Unit\Mus_IntroStart"/>
+				<Event Id="992918820" Name="Mus_Score_Start" ObjectPath="\Events\Default Work Unit\Mus_Score_Start"/>
+				<Event Id="777380440" Name="Mus_Score_Stop" ObjectPath="\Events\Default Work Unit\Mus_Score_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="2963407040" Name="Spaghettication" ObjectPath="\Events\Default Work Unit\Spaghettication" MaxAttenuation="0.000000"/>
+				<Event Id="385134826" Name="SpaghettiPops" ObjectPath="\Events\Default Work Unit\SpaghettiPops" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="17280737" Language="SFX">
+					<ShortName>StartDeadGame.wav</ShortName>
+					<Path>SFX\StartDeadGame_56D34C19.wem</Path>
+				</File>
+				<File Id="76495013" Language="SFX">
+					<ShortName>Mus_SpaceCity_AccInt2.wav</ShortName>
+					<Path>SFX\Mus_SpaceCity_AccInt2_8956FC97.wem</Path>
+				</File>
+				<File Id="95801576" Language="SFX">
+					<ShortName>Desintegration.wav</ShortName>
+					<Path>SFX\Desintegration_8956FC97.wem</Path>
+				</File>
+				<File Id="104668417" Language="SFX">
+					<ShortName>Mus_Mafia_Mel1.wav</ShortName>
+					<Path>SFX\Mus_Mafia_Mel1_8956FC97.wem</Path>
+				</File>
+				<File Id="119667492" Language="SFX">
+					<ShortName>Mus_SpaceCity_Basse2.wav</ShortName>
+					<Path>SFX\Mus_SpaceCity_Basse2_8956FC97.wem</Path>
+				</File>
+				<File Id="133505813" Language="SFX">
+					<ShortName>blackHoleAppear.wav</ShortName>
+					<Path>SFX\blackHoleAppear_8956FC97.wem</Path>
+				</File>
+				<File Id="159393971" Language="SFX">
+					<ShortName>Mus_Menu_AccInt1.wav</ShortName>
+					<Path>SFX\Mus_Menu_AccInt1_8956FC97.wem</Path>
+				</File>
+				<File Id="198561537" Language="SFX">
+					<ShortName>LaserShots-003.wav</ShortName>
+					<Path>SFX\LaserShots-003_56D34C19.wem</Path>
+				</File>
+				<File Id="222567138" Language="SFX">
+					<ShortName>Mus_SpaceCity_AccInt1.wav</ShortName>
+					<Path>SFX\Mus_SpaceCity_AccInt1_8956FC97.wem</Path>
+				</File>
+				<File Id="317089563" Language="SFX">
+					<ShortName>LaserShots-001.wav</ShortName>
+					<Path>SFX\LaserShots-001_56D34C19.wem</Path>
+				</File>
+				<File Id="324271420" Language="SFX">
+					<ShortName>Mus_Mafia_Basse.wav</ShortName>
+					<Path>SFX\Mus_Mafia_Basse_8956FC97.wem</Path>
+				</File>
+				<File Id="324363051" Language="SFX">
+					<ShortName>Buttons.wav</ShortName>
+					<Path>SFX\Buttons_56D34C19.wem</Path>
+				</File>
+				<File Id="438215147" Language="SFX">
+					<ShortName>Mus_SpaceCity_Mel1.wav</ShortName>
+					<Path>SFX\Mus_SpaceCity_Mel1_8956FC97.wem</Path>
+				</File>
+				<File Id="466612607" Language="SFX">
+					<ShortName>Mus_Mafia_Mel2.wav</ShortName>
+					<Path>SFX\Mus_Mafia_Mel2_8956FC97.wem</Path>
+				</File>
+				<File Id="531260678" Language="SFX">
+					<ShortName>Mus_Mafia_Basse2.wav</ShortName>
+					<Path>SFX\Mus_Mafia_Basse2_8956FC97.wem</Path>
+				</File>
+				<File Id="541277802" Language="SFX">
+					<ShortName>Mus_Menu_Mel1.wav</ShortName>
+					<Path>SFX\Mus_Menu_Mel1_8956FC97.wem</Path>
+				</File>
+				<File Id="547343145" Language="SFX">
+					<ShortName>Mus_Menu_Basse1.wav</ShortName>
+					<Path>SFX\Mus_Menu_Basse1_8956FC97.wem</Path>
+				</File>
+				<File Id="553490380" Language="SFX">
+					<ShortName>blackHoleShrink.wav</ShortName>
+					<Path>SFX\blackHoleShrink_8956FC97.wem</Path>
+				</File>
+				<File Id="566309183" Language="SFX">
+					<ShortName>Mus_Intro_Basse.wav</ShortName>
+					<Path>SFX\Mus_Intro_Basse_8956FC97.wem</Path>
+				</File>
+				<File Id="580220727" Language="SFX">
+					<ShortName>Mus_Mafia_PianoGroove.wav</ShortName>
+					<Path>SFX\Mus_Mafia_PianoGroove_8956FC97.wem</Path>
+				</File>
+				<File Id="604018777" Language="SFX">
+					<ShortName>Mus_SpaceCity_Basse1.wav</ShortName>
+					<Path>SFX\Mus_SpaceCity_Basse1_8956FC97.wem</Path>
+				</File>
+				<File Id="607722893" Language="SFX">
+					<ShortName>Mus_Mafia_Mel2_Attack.wav</ShortName>
+					<Path>SFX\Mus_Mafia_Mel2_Attack_8956FC97.wem</Path>
+				</File>
+				<File Id="720581476" Language="SFX">
+					<ShortName>LaserShots-002.wav</ShortName>
+					<Path>SFX\LaserShots-002_56D34C19.wem</Path>
+				</File>
+				<File Id="751647922" Language="SFX">
+					<ShortName>Mus_Intro_Mel.wav</ShortName>
+					<Path>SFX\Mus_Intro_Mel_8956FC97.wem</Path>
+				</File>
+				<File Id="778647489" Language="SFX">
+					<ShortName>Mus_Mafia_PianoGroove2.wav</ShortName>
+					<Path>SFX\Mus_Mafia_PianoGroove2_8956FC97.wem</Path>
+				</File>
+				<File Id="897979933" Language="SFX">
+					<ShortName>Spaghettication.wav</ShortName>
+					<Path>SFX\Spaghettication_8956FC97.wem</Path>
+				</File>
+				<File Id="984924824" Language="SFX">
+					<ShortName>ButtonsExit.wav</ShortName>
+					<Path>SFX\ButtonsExit_56D34C19.wem</Path>
+				</File>
+				<File Id="1067018897" Language="SFX">
+					<ShortName>Mus_Mafia_Percs.wav</ShortName>
+					<Path>SFX\Mus_Mafia_Percs_8956FC97.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

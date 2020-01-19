@@ -1,0 +1,58 @@
+Event	ID	Name			Wwise Object Path	Notes
+	203100604	Buttons			\Default Work Unit\Buttons	
+	385134826	SpaghettiPops			\Default Work Unit\SpaghettiPops	
+	481313334	Mus_Game_Stop			\Default Work Unit\Mus_Game_Stop	
+	777380440	Mus_Score_Stop			\Default Work Unit\Mus_Score_Stop	
+	970665416	Mus_Intro_Stop			\Default Work Unit\Mus_Intro_Stop	
+	992918820	Mus_Score_Start			\Default Work Unit\Mus_Score_Start	
+	1074254744	MenuStop			\Default Work Unit\MenuStop	
+	1277278512	blackHoleSchrink			\Default Work Unit\blackHoleSchrink	
+	1447920996	MenuStart			\Default Work Unit\MenuStart	
+	1569836982	Mus_Game_Start			\Default Work Unit\Mus_Game_Start	
+	1884632487	BlackHoleAppear			\Default Work Unit\BlackHoleAppear	
+	2044049779	Dead			\Default Work Unit\Dead	
+	2069380085	Car_Explosion			\Default Work Unit\Car_Explosion	
+	2381981414	LaserShot			\Default Work Unit\LaserShot	
+	2646023637	ButtonExit			\Default Work Unit\ButtonExit	
+	2963407040	Spaghettication			\Default Work Unit\Spaghettication	
+	3075562871	Mus_IntroStart			\Default Work Unit\Mus_IntroStart	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2406858644	Meter			\Default Work Unit\Meter	
+
+Trigger	ID	Name			Wwise Object Path	Notes
+	943279962	Spaghetticaiton			\Default Work Unit\Spaghetticaiton	
+	1277278512	BlackHoleSchrink			\Default Work Unit\BlackHoleSchrink	
+	1884632487	blackHoleAppear			\Default Work Unit\blackHoleAppear	
+	2069380085	Car_explosion			\Default Work Unit\Car_explosion	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	17280737	StartDeadGame	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\StartDeadGame_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\StartDeadGame		253864
+	76495013	Mus_SpaceCity_AccInt2	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_SpaceCity_AccInt2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel2\Mus_SpaceCity_AccInt2		2837804
+	95801576	Desintegration	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Desintegration_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Desintegration\Desintegration		150356
+	104668417	Mus_Mafia_Mel1	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Mafia_Mel1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel1\Mus_Mafia_Mel1		2300932
+	119667492	Mus_SpaceCity_Basse2	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_SpaceCity_Basse2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel2\Mus_SpaceCity_Basse2		2837804
+	133505813	blackHoleAppear	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\blackHoleAppear_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\blackHoleAppear\blackHoleAppear		157356
+	159393971	Mus_Menu_AccInt1	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Menu_AccInt1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MenuMusic\Mus_Menu_AccInt1\Mus_Menu_AccInt1		2300932
+	198561537	LaserShots-003	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\LaserShots-003_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\LaserShots\LaserShots-003		234316
+	222567138	Mus_SpaceCity_AccInt1	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_SpaceCity_AccInt1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel1\Mus_SpaceCity_AccInt1		2300932
+	317089563	LaserShots-001	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\LaserShots-001_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\LaserShots\LaserShots-001		244132
+	324271420	Mus_Mafia_Basse	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Mafia_Basse_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel1\Mus_Mafia_Basse		2300932
+	324363051	Buttons	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Buttons_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buttons		101584
+	438215147	Mus_SpaceCity_Mel1	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_SpaceCity_Mel1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel1\Mus_SpaceCity_Mel1		2300932
+	466612607	Mus_Mafia_Mel2	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Mafia_Mel2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel2\Mus_Mafia_Mel2		2454324
+	531260678	Mus_Mafia_Basse2	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Mafia_Basse2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel2\Mus_Mafia_Basse2		2607716
+	541277802	Mus_Menu_Mel1	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Menu_Mel1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MenuMusic\Mus_Menu_AccInt1\Mus_Menu_Mel1		2300932
+	547343145	Mus_Menu_Basse1	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Menu_Basse1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MenuMusic\Mus_Menu_AccInt1\Mus_Menu_Basse1		2300932
+	553490380	blackHoleShrink	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\blackHoleShrink_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\blackHoleShrink\blackHoleShrink		273488
+	566309183	Mus_Intro_Basse	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Intro_Basse_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MusicIntro\Mus_Intro_Atm\Mus_Intro_Basse		2607716
+	580220727	Mus_Mafia_PianoGroove	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Mafia_PianoGroove_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel1\Mus_Mafia_PianoGroove		2300932
+	604018777	Mus_SpaceCity_Basse1	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_SpaceCity_Basse1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel1\Mus_SpaceCity_Basse1		2300932
+	607722893	Mus_Mafia_Mel2_Attack	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Mafia_Mel2_Attack_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel2\Mus_Mafia_Mel2_Attack		2837804
+	720581476	LaserShots-002	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\LaserShots-002_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\LaserShots\LaserShots-002		237280
+	751647922	Mus_Intro_Mel	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Intro_Mel_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\MusicIntro\Mus_Intro_Atm\Mus_Intro_Mel		2607716
+	778647489	Mus_Mafia_PianoGroove2	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Mafia_PianoGroove2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel2\Mus_Mafia_PianoGroove2		2607716
+	897979933	Spaghettication	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Spaghettication_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Spaghettication\Spaghettication		262208
+	984924824	ButtonsExit	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\ButtonsExit_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\ButtonsExit		235220
+	1067018897	Mus_Mafia_Percs	C:\Users\TempAccount\Desktop\GameJams\ItALIEN\Git\Newties-Jam\ItALIENWwise\.cache\Windows\SFX\Mus_Mafia_Percs_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\Mus_Mafia_Mel1\Mus_Mafia_Percs		2300932
+
